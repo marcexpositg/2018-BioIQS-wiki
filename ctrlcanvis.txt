@@ -1,0 +1,4 @@
+Anem apuntant aqui com anem adaptant lu de la germana den xavi  a la wiki online
+
+1.	Copiar part del navbar a la template header. Canviar els enllaços i afegir-los la barr / de: /dkfj.html pq templates està dins una carpeta
+2.	Enllaçar l’estil new-age.css a totes les pàgines tal i com es faria de forma local (/css/new-age.css).
