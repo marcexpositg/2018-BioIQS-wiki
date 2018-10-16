@@ -12,7 +12,7 @@ module.exports = function(root) {
     // Teaminfo. Duh.
     const teaminfo = {
         year: 2018,
-        teamName: 'Virginia'
+        teamName: 'BioIQS-Barcelona'
     };
 
     const imagetypes = '{png,jpg,gif,svg}';
