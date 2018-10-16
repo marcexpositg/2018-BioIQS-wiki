@@ -1,0 +1,9 @@
+{
+  "generator-igemwiki": {
+    "year": "2018",
+    "teamName": "BioIQS-Barcelona",
+    "repo": "https://github.com/marcexpositg/2018-BioIQS-wiki",
+    "author": "",
+    "template": "basic/"
+  }
+}
