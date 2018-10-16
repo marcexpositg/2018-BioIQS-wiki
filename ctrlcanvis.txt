@@ -1,4 +1,19 @@
 Anem apuntant aqui com anem adaptant lu de la germana den xavi  a la wiki online
 
-1.	Copiar part del navbar a la template header. Canviar els enllaços i afegir-los la barr / de: /dkfj.html pq templates està dins una carpeta
+1.	Copiar part del navbar a la template header. NO CAL Canviar els enllaços i afegir-los la barra / de: /dkfj.html pq templates està dins una carpeta
 2.	Enllaçar l’estil new-age.css a totes les pàgines tal i com es faria de forma local (/css/new-age.css).
+
+
+3. Ajuntar les carpetes de la carpeta style/images amb les de images i copiarles totes a images del servidor de wiki igem. Canviar la direccio de toets les imatges de la wiki per redirigir a carpeta images
+També s'han de canviar les img/  del fitxer new-age.css per readreçar a imatges/
+
+4. Canvio funcio del index.html en comptes de header fico navigationbar i tb canvio javascript, pq la tati fa servir header per donar estil a uns fitxers
+
+5. Afegeixo bootstrap com a primer .css del template. Es linka a carpeta css/ i no styles/ pq es tal com queda al build
+
+6. Canviem <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css"> per css/simple-line-icons
+PERÒ EL simple-line-icons té urls a unes fonts i les he copiat de forma cutre a build fonts, però nse si va bé.
+
+7. He afegit TITLE AL header
+
+8. El DEVICE-MOCKUPS no va enlloc, aixi que no el copio

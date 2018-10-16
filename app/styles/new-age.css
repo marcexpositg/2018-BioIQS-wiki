@@ -198,7 +198,7 @@ p.n-p {
 
 .dot {
     width: 9px;
-    background-image: url(img/dots.png);
+    background-image: url(/images/dots.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -206,7 +206,7 @@ p.n-p {
 }
 
 .lines:before {
-    content: url("img/comas.png");
+    content: url("/images/comas.png");
     position: absolute;
     top: -49px;
     left: 77px;
@@ -215,7 +215,7 @@ p.n-p {
 }
 
 .lines:after {
-    content: url("img/comas.png");
+    content: url("/images/comas.png");
     position: absolute;
     bottom: -33px;
     right: 88px;
@@ -246,21 +246,21 @@ p.n-p {
 }
 
 .fletxa:before {
-    content: url(img/fletxa-w.png);
+    content: url(/images/fletxa-w.png);
     position: absolute;
     top: -35px;
     left: -25px;
 }
 
 .fletxa-d:before {
-    content: url(img/fletxa-d.png);
+    content: url(/images/fletxa-d.png);
     position: absolute;
     bottom: -74px;
     left: -28px;
 }
 
 .prov:before {
-    content: url(img/proveta.png);
+    content: url(/images/proveta.png);
     position: absolute;
     bottom: 0;
     right: -55px;
@@ -271,7 +271,7 @@ p.n-p {
 }
 
 .microscopi:before {
-    content: url(img/microscopio.png);
+    content: url(/images/microscopio.png);
     position: absolute;
     top: -95px;
     right: 172px;
@@ -306,7 +306,7 @@ h4.sub-card {
 }
 
 .yellow:after {
-    content: url(img/ralla.png);
+    content: url(/images/ralla.png);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -592,47 +592,47 @@ a.back-card-link {
 }
 
 .roger:before {
-    background-image: url(img/ramen.png);
+    background-image: url(/images/ramen.png);
 }
 
 .julia:before {
-    background-image: url(img/bocata.png);
+    background-image: url(/images/bocata.png);
 }
 
 .victor:before {
-    background-image: url(img/croissant.png);
+    background-image: url(/images/croissant.png);
 }
 
 .marc:before {
-    background-image: url(img/bimbo.png);
+    background-image: url(/images/bimbo.png);
 }
 
 .mireia:before {
-    background-image: url(img/cupcake.png);
+    background-image: url(/images/cupcake.png);
 }
 
 .xavi:before {
-    background-image: url(img/noodles.png);
+    background-image: url(/images/noodles.png);
 }
 
 .jordi:before {
-    background-image: url(img/cookies.png);
+    background-image: url(/images/cookies.png);
 }
 
 .edu:before {
-    background-image: url(img/pizza.png);
+    background-image: url(/images/pizza.png);
 }
 
 .coral:before {
-    background-image: url(img/pasta.png);
+    background-image: url(/images/pasta.png);
 }
 
 .jorda:before {
-    background-image: url(img/donut.png);
+    background-image: url(/images/donut.png);
 }
 
 .marta:before {
-    background-image: url(img/cake.png);
+    background-image: url(/images/cake.png);
 }
 
 /*END TEAM MEMBERS CODE*/
@@ -661,51 +661,51 @@ a.back-card-link {
 }
 
 .one:before {
-    background-image: url(img/one.png);
+    background-image: url(/images/one.png);
 }
 
 .two:before {
-    background-image: url(img/two.png);
+    background-image: url(/images/two.png);
 }
 
 .three:before {
-    background-image: url(img/three.png);
+    background-image: url(/images/three.png);
 }
 
 .four:before {
-    background-image: url(img/four.png);
+    background-image: url(/images/four.png);
 }
 
 .five:before {
-    background-image: url(img/five.png);
+    background-image: url(/images/five.png);
 }
 
 .six:before {
-    background-image: url(img/six.png);
+    background-image: url(/images/six.png);
 }
 
 .seven:before {
-    background-image: url(img/seven.png);
+    background-image: url(/images/seven.png);
 }
 
 .eight:before {
-    background-image: url(img/eight.png);
+    background-image: url(/images/eight.png);
 }
 
 .nine:before {
-    background-image: url(img/nine.png);
+    background-image: url(/images/nine.png);
 }
 
 .ten:before {
-    background-image: url(img/ten.png);
+    background-image: url(/images/ten.png);
 }
 
 .eleven:before {
-    background-image: url(img/eleven.png);
+    background-image: url(/images/eleven.png);
 }
 
 .twelve:before {
-    background-image: url(img/twelve.png);
+    background-image: url(/images/twelve.png);
 }
 
 /* End Wiki cards code */
@@ -1122,7 +1122,7 @@ header.masthead {
     background: #fdd884;
     background: -webkit-gradient(linear, right top, left top, from(#fdd884), to(#ef8e4e));
     background: linear-gradient(to left, #fdd884, #ef8e4e);
-    /*    background: url(../img/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
+    /*    background: url(../images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
     background-repeat: no-repeat;
 }
 
@@ -1135,7 +1135,7 @@ header.masthead.teams {
     background: #fdd884;
     background: -webkit-gradient(linear, right top, left top, from(#fdd884), to(#ef8e4e));
     background: linear-gradient(to left, #aeddff, #032A5D);
-    /*    background: url(../img/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
+    /*    background: url(../images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
     background-repeat: no-repeat;
 }
 
@@ -1287,7 +1287,7 @@ section.features .feature-item i {
 section.cta {
     position: relative;
     padding: 250px 0;
-    background-image: url("../img/fisio-pat.jpeg");
+    background-image: url("../images/fisio-pat.jpeg");
     background-position: center;
     background-size: cover;
 }
