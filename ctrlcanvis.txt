@@ -17,3 +17,7 @@ PERÒ EL simple-line-icons té urls a unes fonts i les he copiat de forma cutre 
 7. He afegit TITLE AL header
 
 8. El DEVICE-MOCKUPS no va enlloc, aixi que no el copio
+
+10. Canviar .min per no min
+        Bootstrap.min canvio a bootstrapmin
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> canvio per allmin , i enganxo allmin.css a carpeta styles
