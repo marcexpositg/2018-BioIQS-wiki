@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/goodload.css">
 
-    <script src="/dist/js/vendor.js"></script>
+    <!--script src="/dist/js/vendor.js"></script-->
 
     <title>BIO IQS</title>
 
@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/adaptwiki.css">
 
 
-    <script src="/js/wiki.js"></script>
+    <!--script src="/js/wiki.js"></script-->
 
     <!--Added MathJax hack to make inline equations work-->
     <script type="text/x-mathjax-config">
@@ -287,6 +287,19 @@
 
     <script src="scripts/scrollsensitive.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function(){    
+            //Check if the current URL contains '#'
+            if(document.URL.indexOf("#")==-1){
+                // Set the URL to whatever it was plus "#".
+                url = document.URL+"#";
+                location = "#";
+        
+                //Reload the page
+                location.reload(true);
+            }
+        });
+        </script>
 
 </body>
 
