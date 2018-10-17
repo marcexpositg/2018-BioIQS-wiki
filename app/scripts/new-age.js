@@ -1,7 +1,8 @@
-(function($) {
+$(function () {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
+
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -29,6 +30,7 @@
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
+
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
@@ -43,3 +45,5 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+location.reload()  //Recarga pq el JQUERY aquest s'executi
