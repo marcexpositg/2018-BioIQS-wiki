@@ -14,7 +14,7 @@
 
   <script>
     $(function() {
-      $('header').load('/templates/header.html');
+      $('navigationbar').load('/templates/header.html');
       $('footer').load('/templates/footer.html');
     });
   </script>
@@ -52,22 +52,22 @@
   <!-- <div id="igem-navbar-placeholder">
     <p>Placeholder for iGEM Navbar</p>
   </div>  TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
-  <header></header>
+  <navigationbar></navigationbar>
 
 
 <!-- Si deixem el tag header aqui es reemplaça per la navbar. S'haura de canviar. -->
-  <div class="masthead">
+  <header class="masthead">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-lg-7 my-auto">
                 <div class="header-content mx-auto">
-                    <h1 class="mb-5">We are the BioIQS iGEM team!</h1>
+                    <h1 class="mb-5">We are the BioIQS bcn iGEM team!</h1>
                     <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Meet us!</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</header>
 
 <section class="project text-center" id="project">
     <div class="container">
@@ -236,6 +236,20 @@
 </section>
 
   <footer></footer>
+
+  <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrapbundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jqueryeasing.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.js"></script>
+
+
 </body>
 </html>
 
