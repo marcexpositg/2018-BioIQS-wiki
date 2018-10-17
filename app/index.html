@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="/dist/js/vendor.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>BIO IQS</title>
-  <!-- <link rel="stylesheet" href="styles/wikitemplate.css"> -->
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
 
-  <link rel="stylesheet" href="css/fuckloadphp.css">
+    <link rel="stylesheet" href="css/goodload.css">
 
+    <script src="/dist/js/vendor.js"></script>
 
-  <!-- <link rel="stylesheet" href="/dist/css/vendor.css">  Estava al template -->
+    <title>BIO IQS</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrapmin.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
 
-  <script>
-    $(function() {
-      $('navigationbar').load('/templates/header.html');
-      $('footer').load('/templates/footer.html');
-    });
-  </script>
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
 
     <!--    Fonts googlefonts-->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -33,215 +38,242 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <!-- <link rel="stylesheet" href="device-mockups/device-mockups.min.css"> NO VA ENLLOC -->
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
 
 
-  <link rel="stylesheet" href="/css/styles.css"> <!-- SON ELS ESTILS DEL TEMPLATE, TREURE'LS -->
-  <link rel="stylesheet" href="/css/new-age.css">
+    <script src="/js/wiki.js"></script>
 
-  <script src="/js/wiki.js"></script>
-
-  <!--Added MathJax hack to make inline equations work-->
-  <script type="text/x-mathjax-config">
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
     tex2jax: {
     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
     processEscapes: true
   }
 });
-</script>   </head>
+</script>
+</head>
 
 <body id="page-top">
-  <div id="igem-navbar-placeholder">
-    <!-- p>Placeholder for iGEM Navbar</p> -->
-  </div>  <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
-  <navigationbar></navigationbar>
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
 
 
-<!-- Si deixem el tag header aqui es reemplaça per la navbar. S'haura de canviar. -->
-  <header class="masthead">
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-lg-7 my-auto">
-                <div class="header-content mx-auto">
-                    <h1 class="mb-5">We are the BioIQS bcn iGEM team!</h1>
-                    <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Meet us!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<section class="project text-center" id="project">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 mx-auto">
-                <h2 class="section-heading orange">Project description</h2>
-                <h3 class="orange">We would like to present you a brief description of our project on celiac disease:</h3>
-
-                <div class="col-md-auto">
-                    <p class="book orange">Our project is based on the design of a <b>personalized gluten sensor</b> by using the common tools of synthetic biology. There are already several sensors that are able to detect gluten in the food. However, there are milestones that still have not been overcome. We propose a robust model in which the HLA molecule of a patient is expressed and used as a sensor to detect specific reactive gluten epitopes.</p>
-                </div>
-                <a class="js-scroll-trigger a-arrow" href="#t-project"><span class="arrow down"></span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="t-project" id="t-project">
-    <div class="container">
-        <div class="row justify-content-center cnt">
-            <div class="col-md-5 image">
-                <img src="images/t-cell.png">
-            </div>
-            <div class="col-md-7 text-description lines">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 col-lg-7">
-                        <p class="text-b"><b>Coeliac disease (CD)</b> is an autoimmune disorder that is closely related with HLA (Human leukocyte antigen), a type of receptor that are located in the surface of almost every cell of a human tissue, including white blood cells.</p>
+    <!-- Si deixem el tag header aqui es reemplaça per la navbar. S'haura de canviar. -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1 class="mb-5">We are the BioIQS bcn iGEM team!</h1>
+                        <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Meet us!</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row cnt block-desc">
-           <div class="col-mx-auto relative microscopi">
-            <div class="col-md-7 ">
-                <p class="apart fletxa">These molecules are responsible for the correct discrimination between what is self and foreign proteins, guaranteeing the correct immune response against foreign agents that can cause infections.
-                </p>
-            </div>
-               
-           </div>
-            
+    </header>
 
-        </div>
+    <section class="project text-center" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Project description</h2>
+                    <h3 class="orange">We would like to present you a brief description of our project on celiac
+                        disease:</h3>
 
-        <div class="row cnt">
-            <div class="col-md-6 text-description">
-                <p class="text-b fletxa-d">
-                    Within the HLA protein family there are the highly polymorphic HLA-DQ, which means that
-                    <b>there are a lot of existing genetic variants of these molecules</b>. Some of these HLA-DQ variants are able to recognize different gluten epitopes (aminoacid sequence of a protein) and present them to the T cells. More specifically, 25% of the general population carry the HLA-DQ that can recognize gluten derived epitopes, but only 1% of the population suffer from coeliac disease.
-                </p>
-
-            </div>
-            <div class="col-md-6 end">
-                <p class="apart yellow">The reason of such fact is that the inflammatory reaction is triggered by some T cells that can sense the gluten epitope presented by the HLA-DQ.</p>
-                <!--                    <img src="images/hla-solo.png">-->
-            </div>
-
-        </div>
-
-        <div class="row justify-content-center cnt block-desc">
-            <div class="col-md-4 image">
-                <img src="images/hla-solo.png">
-            </div>
-            <div class="col-md-7 text-description">
-                <div class="row justify-content-center prov">
-                    <div class="col-sm-9">
-                        <p class="text-b">Understanding why the inflammatory response is triggered by a certain type of T cells upon epitope presentation by HLA-DQ molecules is essential to uncover the mechanism of CD. Since the first step for the immune response activation is the recognition and binding of the gluten epitope to the HLA-DQ receptor. </p>
+                    <div class="col-md-auto">
+                        <p class="book orange">Our project is based on the design of a <b>personalized gluten sensor</b>
+                            by using the common tools of synthetic biology. There are already several sensors that are
+                            able to detect gluten in the food. However, there are milestones that still have not been
+                            overcome. We propose a robust model in which the HLA molecule of a patient is expressed and
+                            used as a sensor to detect specific reactive gluten epitopes.</p>
                     </div>
+                    <a class="js-scroll-trigger a-arrow" href="#t-project"><span class="arrow down"></span></a>
                 </div>
             </div>
-            <div class="col-md-8 end cnt block-desc-t">
-                <p class="apart yellow">The development of a personalized sensor to determine reactive epitopes could help to better understand the disease and would also allow the screening of those foods that could potentially trigger an immune response to the patient.</p>
-            </div>
-
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-3 button">
-                <a href="#objectiv" class="text-transform js-scroll-trigger">Look our objectives!</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-<section class="objectiv text-center" id="objectiv">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h2 class="section-heading orange">Objectives</h2>
-                <h3 class="orange">Here there are:</h3>
-
-                <div class="col-md-auto orange">
-                    <p class="book">In our iGEM Project we will design a
-                        <b>personalized gluten sensor</b> through a synthetic biology approach. To do so, we decided to build a model based on the HLA expression of the patient which will be coupled to a sensor, allowing the detection of reactive epitopes. The main specificities of our sensor are described as follows:</p>
+    <section class="t-project" id="t-project">
+        <div class="container">
+            <div class="row justify-content-center cnt">
+                <div class="col-md-5 image">
+                    <img src="images/t-cell.png">
                 </div>
-                <a class="js-scroll-trigger a-arrow" href="#t-objectives"><span class="arrow down"></span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="t-objectives" id="t-objectives">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 right">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="apart big">first</p>
-                                <p class="text-b">Since our sensor will be built <b>according to the patient HLA</b>, it will allow the detection of specific reactive epitopes independently of the food source.</p>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="row justify-content-center">
-                            
-                            <div class="col-md-3 center">
-                            <img class="img" src="images/diagn.png" alt="Card image cap">
-                            </div>
-                            <div class="col-md-3 center">
-                            <img class="img" src="images/dna.png" alt="Card image cap">
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-md-6 left">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="apart big">second</p>
-                        <p class="text-b">Additionally, our sensor will be able to detect reactive epitopes even in
-                            <b>fermented foods.</b></p>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-3 center">
-                                <img class="img" src="images/beer.png" alt="Card image cap">
-                            </div>
-                            <div class="col-3 center">
-                                <img class="img" src="images/croissant.png" alt="Card image cap">
-                            </div>
-                            <div class="col-3 center">
-                                <img class="img" src="images/ramen.png" alt="Card image cap">
-                            </div>
-                            <div class="col-3 center">
-                                <img class="img" src="images/salad.png" alt="Card image cap">
-                            </div>
+                <div class="col-md-7 text-description lines">
+                    <div class="row justify-content-center">
+                        <div class="col-md-11 col-lg-7">
+                            <p class="text-b"><b>Coeliac disease (CD)</b> is an autoimmune disorder that is closely
+                                related with HLA (Human leukocyte antigen), a type of receptor that are located in the
+                                surface of almost every cell of a human tissue, including white blood cells.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row separation">
-            <div class="col-md-6 right">
-                <div class="justify-content-center">
-                    <p class="apart big">third</p>
-                    <!--<img class="image" src="images/epitop.png" alt="Card image cap">-->
-                    <p class="text-b">The methodology implemented in our sensor could be used for the <b>identification of new reactive epitopes</b> and unknown allelic variants.</p>
+            <div class="row cnt block-desc">
+                <div class="col-mx-auto relative microscopi">
+                    <div class="col-md-7 ">
+                        <p class="apart fletxa">These molecules are responsible for the correct discrimination between
+                            what is self and foreign proteins, guaranteeing the correct immune response against foreign
+                            agents that can cause infections.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="row cnt">
+                <div class="col-md-6 text-description">
+                    <p class="text-b fletxa-d">
+                        Within the HLA protein family there are the highly polymorphic HLA-DQ, which means that
+                        <b>there are a lot of existing genetic variants of these molecules</b>. Some of these HLA-DQ
+                        variants are able to recognize different gluten epitopes (aminoacid sequence of a protein) and
+                        present them to the T cells. More specifically, 25% of the general population carry the HLA-DQ
+                        that can recognize gluten derived epitopes, but only 1% of the population suffer from coeliac
+                        disease.
+                    </p>
+
+                </div>
+                <div class="col-md-6 end">
+                    <p class="apart yellow">The reason of such fact is that the inflammatory reaction is triggered by
+                        some T cells that can sense the gluten epitope presented by the HLA-DQ.</p>
+                    <!--                    <img src="images/hla-solo.png">-->
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center cnt block-desc">
+                <div class="col-md-4 image">
+                    <img src="images/hla-solo.png">
+                </div>
+                <div class="col-md-7 text-description">
+                    <div class="row justify-content-center prov">
+                        <div class="col-sm-9">
+                            <p class="text-b">Understanding why the inflammatory response is triggered by a certain
+                                type of T cells upon epitope presentation by HLA-DQ molecules is essential to uncover
+                                the mechanism of CD. Since the first step for the immune response activation is the
+                                recognition and binding of the gluten epitope to the HLA-DQ receptor. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 end cnt block-desc-t">
+                    <p class="apart yellow">The development of a personalized sensor to determine reactive epitopes
+                        could help to better understand the disease and would also allow the screening of those foods
+                        that could potentially trigger an immune response to the patient.</p>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 button">
+                    <a href="#objectiv" class="text-transform js-scroll-trigger">Look our objectives!</a>
                 </div>
             </div>
-            <div class="col-md-6 left">
-                <p class="apart big">fourth</p>
-                <p class="text-b">Our design requires<b> only a DNA sample of the patient.</b> Therefore, the methodology and application of our sensor could be extended for the detection of other HLA related disorders.</p>
-<!--                    <img class="img" src="images/win.png" alt="Card image cap">-->
+        </div>
+    </section>
+
+
+    <section class="objectiv text-center" id="objectiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading orange">Objectives</h2>
+                    <h3 class="orange">Here there are:</h3>
+
+                    <div class="col-md-auto orange">
+                        <p class="book">In our iGEM Project we will design a
+                            <b>personalized gluten sensor</b> through a synthetic biology approach. To do so, we
+                            decided to build a model based on the HLA expression of the patient which will be coupled
+                            to a sensor, allowing the detection of reactive epitopes. The main specificities of our
+                            sensor are described as follows:</p>
+                    </div>
+                    <a class="js-scroll-trigger a-arrow" href="#t-objectives"><span class="arrow down"></span></a>
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <section class="t-objectives" id="t-objectives">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 right">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="apart big">first</p>
+                            <p class="text-b">Since our sensor will be built <b>according to the patient HLA</b>, it
+                                will allow the detection of specific reactive epitopes independently of the food
+                                source.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row justify-content-center">
 
-  <footer></footer>
+                                <div class="col-md-3 center">
+                                    <img class="img" src="images/diagn.png" alt="Card image cap">
+                                </div>
+                                <div class="col-md-3 center">
+                                    <img class="img" src="images/dna.png" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
 
-  <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
+                    </div>
+                </div>
+                <div class="col-md-6 left">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="apart big">second</p>
+                            <p class="text-b">Additionally, our sensor will be able to detect reactive epitopes even in
+                                <b>fermented foods.</b></p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-3 center">
+                                    <img class="img" src="images/beer.png" alt="Card image cap">
+                                </div>
+                                <div class="col-3 center">
+                                    <img class="img" src="images/croissant.png" alt="Card image cap">
+                                </div>
+                                <div class="col-3 center">
+                                    <img class="img" src="images/ramen.png" alt="Card image cap">
+                                </div>
+                                <div class="col-3 center">
+                                    <img class="img" src="images/salad.png" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row separation">
+                <div class="col-md-6 right">
+                    <div class="justify-content-center">
+                        <p class="apart big">third</p>
+                        <!--<img class="image" src="images/epitop.png" alt="Card image cap">-->
+                        <p class="text-b">The methodology implemented in our sensor could be used for the <b>identification
+                                of new reactive epitopes</b> and unknown allelic variants.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 left">
+                    <p class="apart big">fourth</p>
+                    <p class="text-b">Our design requires<b> only a DNA sample of the patient.</b> Therefore, the
+                        methodology and application of our sensor could be extended for the detection of other HLA
+                        related disorders.</p>
+                    <!--                    <img class="img" src="images/win.png" alt="Card image cap">-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="scripts/jquery.js"></script>
@@ -255,6 +287,5 @@
 
 
 </body>
+
 </html>
-
-

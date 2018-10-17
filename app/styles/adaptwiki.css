@@ -1,0 +1,7 @@
+#top, #top_title, #top_menu_under {
+    display: none;
+}
+
+.fixed-top {
+    top: 9px;
+}
