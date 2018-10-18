@@ -202,7 +202,7 @@ p.n-p {
 
 .dot {
     width: 9px;
-    background-image: url(/images/dots.png);
+    background-image: url("http://2018.igem.org/wiki/images/e/e7/T--BioIQS-Barcelona--2018_dots.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -210,7 +210,7 @@ p.n-p {
 }
 
 .lines:before {
-    content: url("/images/comas.png");
+    content: url("http://2018.igem.org/wiki/images/f/f1/T--BioIQS-Barcelona--2018_comas.png");
     position: absolute;
     top: -49px;
     left: 77px;
@@ -219,7 +219,7 @@ p.n-p {
 }
 
 .lines:after {
-    content: url("/images/comas.png");
+    content: url("http://2018.igem.org/wiki/images/f/f1/T--BioIQS-Barcelona--2018_comas.png");
     position: absolute;
     bottom: -33px;
     right: 88px;
@@ -250,21 +250,21 @@ p.n-p {
 }
 
 .fletxa:before {
-    content: url(/images/fletxa-w.png);
+    content: url("http://2018.igem.org/wiki/images/6/6d/T--BioIQS-Barcelona--2018_fletxa-w.png");
     position: absolute;
     top: -35px;
     left: -25px;
 }
 
 .fletxa-d:before {
-    content: url(/images/fletxa-d.png);
+    content: url("http://2018.igem.org/wiki/images/c/cd/T--BioIQS-Barcelona--2018_fletxa-d.png");
     position: absolute;
     bottom: -74px;
     left: -28px;
 }
 
 .fletxa-d-l:before {
-    content: url(/images/fletxa-d.png);
+    content: url("http://2018.igem.org/wiki/images/c/cd/T--BioIQS-Barcelona--2018_fletxa-d.png");
     position: absolute;
     bottom: -107px;
     transform: rotate(30deg);
@@ -272,21 +272,21 @@ p.n-p {
 }
 
 .dots-line:before {
-    content: url(/images/dots-line.png);
+    content: url("http://2018.igem.org/wiki/images/7/76/T--BioIQS-Barcelona--2018_dots-line.png");
     position: absolute;
     top: 23px;
     right: -16px;
 }
 
 .vertical-lines:before {
-    content: url(/images/vertical-lines.png);
+    content: url("http://2018.igem.org/wiki/images/b/b3/T--BioIQS-Barcelona--2018_vertical-lines.png");
     position: absolute;
     bottom: 0;
     left: 140px;
 }
 
 .prov:before {
-    content: url(/images/proveta.png);
+    content: url("http://2018.igem.org/wiki/images/2/21/T--BioIQS-Barcelona--2018_proveta.png");
     position: absolute;
     bottom: 0;
     right: -55px;
@@ -297,7 +297,7 @@ p.n-p {
 }
 
 .microscopi:before {
-    content: url(/images/microscopio.png);
+    content: url("http://2018.igem.org/wiki/images/4/4a/T--BioIQS-Barcelona--2018_microscopio.png");
     position: absolute;
     top: -120px;
     right: 172px;
@@ -332,7 +332,7 @@ h4.sub-card {
 }
 
 .yellow:after {
-    content: url(/images/ralla.png);
+    content: url("http://2018.igem.org/wiki/images/2/2e/T--BioIQS-Barcelona--2018_ralla.png");
     position: absolute;
     bottom: 0;
     right: 0;
@@ -627,47 +627,47 @@ a.back-card-link {
 }
 
 .roger:before {
-    background-image: url(/images/ramen.png);
+    background-image: url("http://2018.igem.org/wiki/images/a/a0/T--BioIQS-Barcelona--2018_ramen.png");
 }
 
 .julia:before {
-    background-image: url(/images/bocata.png);
+    background-image: url("http://2018.igem.org/wiki/images/3/3c/T--BioIQS-Barcelona--2018_bocata.png");
 }
 
 .victor:before {
-    background-image: url(/images/croissant.png);
+    background-image: url("http://2018.igem.org/wiki/images/4/40/T--BioIQS-Barcelona--2018_croissant.png");
 }
 
 .marc:before {
-    background-image: url(/images/bimbo.png);
+    background-image: url("http://2018.igem.org/wiki/images/7/74/T--BioIQS-Barcelona--2018_bimbo.png");
 }
 
 .mireia:before {
-    background-image: url(/images/cupcake.png);
+    background-image: url("http://2018.igem.org/wiki/images/b/b9/T--BioIQS-Barcelona--2018_cupcake.png");
 }
 
 .xavi:before {
-    background-image: url(/images/noodles.png);
+    background-image: url("http://2018.igem.org/wiki/images/c/c7/T--BioIQS-Barcelona--2018_noodles.png");
 }
 
 .jordi:before {
-    background-image: url(/images/cookies.png);
+    background-image: url("http://2018.igem.org/wiki/images/2/2b/T--BioIQS-Barcelona--2018_cookies.png");
 }
 
 .edu:before {
-    background-image: url(/images/pizza.png);
+    background-image: url("http://2018.igem.org/wiki/images/c/ca/T--BioIQS-Barcelona--2018_pizza.png");
 }
 
 .coral:before {
-    background-image: url(/images/pasta.png);
+    background-image: url("http://2018.igem.org/wiki/images/f/f2/T--BioIQS-Barcelona--2018_pasta.png");
 }
 
 .jorda:before {
-    background-image: url(/images/donut.png);
+    background-image: url("http://2018.igem.org/wiki/images/4/4a/T--BioIQS-Barcelona--2018_donut.png");
 }
 
 .marta:before {
-    background-image: url(/images/cake.png);
+    background-image: url("http://2018.igem.org/wiki/images/f/f9/T--BioIQS-Barcelona--2018_cake.png");
 }
 
 /*END TEAM MEMBERS CODE*/
@@ -696,51 +696,51 @@ a.back-card-link {
 }
 
 .one:before {
-    background-image: url(/images/one.png);
+    background-image: url("http://2018.igem.org/wiki/images/5/5c/T--BioIQS-Barcelona--2018_one.png");
 }
 
 .two:before {
-    background-image: url(/images/two.png);
+    background-image: url("http://2018.igem.org/wiki/images/a/a7/T--BioIQS-Barcelona--2018_two.png");
 }
 
 .three:before {
-    background-image: url(/images/three.png);
+    background-image: url("http://2018.igem.org/wiki/images/0/02/T--BioIQS-Barcelona--2018_three.png");
 }
 
 .four:before {
-    background-image: url(/images/four.png);
+    background-image: url("http://2018.igem.org/wiki/images/8/8d/T--BioIQS-Barcelona--2018_four.png");
 }
 
 .five:before {
-    background-image: url(/images/five.png);
+    background-image: url("http://2018.igem.org/wiki/images/5/51/T--BioIQS-Barcelona--2018_five.png");
 }
 
 .six:before {
-    background-image: url(/images/six.png);
+    background-image: url("http://2018.igem.org/wiki/images/3/30/T--BioIQS-Barcelona--2018_six.png");
 }
 
 .seven:before {
-    background-image: url(/images/seven.png);
+    background-image: url("http://2018.igem.org/wiki/images/b/b6/T--BioIQS-Barcelona--2018_seven.png");
 }
 
 .eight:before {
-    background-image: url(/images/eight.png);
+    background-image: url("http://2018.igem.org/wiki/images/4/43/T--BioIQS-Barcelona--2018_eight.png");
 }
 
 .nine:before {
-    background-image: url(/images/nine.png);
+    background-image: url("http://2018.igem.org/wiki/images/8/8c/T--BioIQS-Barcelona--2018_nine.png");
 }
 
 .ten:before {
-    background-image: url(/images/ten.png);
+    background-image: url("http://2018.igem.org/wiki/images/3/34/T--BioIQS-Barcelona--2018_ten.png");
 }
 
 .eleven:before {
-    background-image: url(/images/eleven.png);
+    background-image: url("http://2018.igem.org/wiki/images/6/65/T--BioIQS-Barcelona--2018_eleven.png");
 }
 
 .twelve:before {
-    background-image: url(/images/twelve.png);
+    background-image: url("http://2018.igem.org/wiki/images/d/d9/T--BioIQS-Barcelona--2018_twelve.png");
 }
 
 /* End Wiki cards code */
@@ -1370,7 +1370,7 @@ section.features .feature-item i {
 section.cta {
     position: relative;
     padding: 250px 0;
-    background-image: url("/images/fisio-pat.jpeg");
+    background-image: url("http://2018.igem.org/wiki/images/3/3f/T--BioIQS-Barcelona--fisio-pat.jpeg");
     background-position: center;
     background-size: cover;
 }
