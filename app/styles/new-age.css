@@ -4,21 +4,21 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
+
  @font-face {
     font-family: "CircularStd-Bold";
-    src: url("/fonts/CircularStd-Bold.otf"); 
+    src: url("/fonts/circularStd-Bold.otf"); 
 }
 
 @font-face {
     font-family: "CircularStd-Medium";
-    src: url("/fonts/CircularStd-Medium.otf");
+    src: url("/fonts/circularStd-Medium.otf");
 }
 
 @font-face {
     font-family: "CircularStd-Book";
-    src: url("/fonts/CircularStd-Book.otf");
+    src: url("/fonts/circularStd-Book.otf");
 }
-
 
 /*EXAMPLE BUTTON TO TOP*/
 
@@ -113,8 +113,16 @@ p.n-p {
     text-shadow: 1px 1px #ffdfa58c;
 }
 
+.b-orange-intense {
+    background-color: #ff9800;
+}
+
 .orange-medium {
     color: #ff9800;
+}
+
+.white {
+    color: #ffffff;
 }
 
 .image {
@@ -255,6 +263,28 @@ p.n-p {
     left: -28px;
 }
 
+.fletxa-d-l:before {
+    content: url(/images/fletxa-d.png);
+    position: absolute;
+    bottom: -107px;
+    transform: rotate(30deg);
+    left: -64px;
+}
+
+.dots-line:before {
+    content: url(/images/dots-line.png);
+    position: absolute;
+    top: 23px;
+    right: -16px;
+}
+
+.vertical-lines:before {
+    content: url(/images/vertical-lines.png);
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+}
+
 .prov:before {
     content: url(/images/proveta.png);
     position: absolute;
@@ -269,7 +299,7 @@ p.n-p {
 .microscopi:before {
     content: url(/images/microscopio.png);
     position: absolute;
-    top: -95px;
+    top: -120px;
     right: 172px;
 }
 
@@ -555,8 +585,17 @@ a.back-card-link {
     width: 80%;
     height: 80%;
     border-radius: 50%;
+/*
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+*/
+}
+
+.card-img-top-modelling {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 .content-img {
@@ -775,8 +814,15 @@ a.back-card-link {
     line-height: 1.6;
 }
 
-.accordion .card-body.wiki-cont a {
+.accordion .card-body.wiki-cont a,
+.link {
     text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border-bottom: 3px solid orange;
+}
+
+.link-l {
     text-decoration: none;
     letter-spacing: 1.2px;
     border-bottom: 3px solid orange;
@@ -786,6 +832,10 @@ a.back-card-link {
 
 .accordion .image img {
     border-radius: 50%;
+}
+
+.accordion .image img.img-m {
+    border-radius: 0;
 }
 
 .social-ic {
@@ -896,7 +946,8 @@ section#team {
     margin: 0px;
 }
 
-section#cl-description {
+section#cl-description,
+section#protocols {
     background-color: #fff0c366 !important;
 }
 
@@ -923,9 +974,17 @@ section h2 {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .text-transform {
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .card {
@@ -1052,6 +1111,9 @@ section h2 {
     .block-sept {
         padding: 1.2rem 0;
     }
+    .block-sept-b {
+        padding-bottom: 2.4rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1061,8 +1123,33 @@ section h2 {
     section#first-steps,
     section#default,
     section#wiki-descriptions,
-    section#collaborate {
+    section#collaborate,
+    section#interlab,
+    section#modelling,
+    section#protocols,
+    section#marjan-de-mey,
+    section#celiac-disease,
+    section#hs-st-deu,
+    section#face-to-face,
+    section#nima-sensor,
+    section#bioethics,
+    section#first-desc-wiki {
         padding: 60px 0;
+    }
+    
+    section#one {
+        padding: 60px 0 30px;
+    }
+    section#two,
+    section#three,
+    section#four {
+        padding: 30px 0;
+    }
+    
+    .position-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
 
@@ -1118,7 +1205,7 @@ header.masthead {
     background: #fdd884;
     background: -webkit-gradient(linear, right top, left top, from(#fdd884), to(#ef8e4e));
     background: linear-gradient(to left, #fdd884, #ef8e4e);
-    /*    background: url(../images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
+    /*    background: url(..//images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
     background-repeat: no-repeat;
 }
 
@@ -1131,7 +1218,7 @@ header.masthead.teams {
     background: #fdd884;
     background: -webkit-gradient(linear, right top, left top, from(#fdd884), to(#ef8e4e));
     background: linear-gradient(to left, #aeddff, #032A5D);
-    /*    background: url(../images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
+    /*    background: url(..//images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
     background-repeat: no-repeat;
 }
 
@@ -1283,7 +1370,7 @@ section.features .feature-item i {
 section.cta {
     position: relative;
     padding: 250px 0;
-    background-image: url("../images/fisio-pat.jpeg");
+    background-image: url("/images/fisio-pat.jpeg");
     background-position: center;
     background-size: cover;
 }
