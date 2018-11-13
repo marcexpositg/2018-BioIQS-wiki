@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/goodload.css">
 
     <!-- Habilitar nomes al app per veure les funcions Jquery -->
-    <script src="/dist/js/vendor.js"></script>
+    <script src="dist/js/vendor.js"></script>
 
     <title>BIO IQS</title>
 
@@ -65,6 +65,8 @@
     </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
     <navigationbar></navigationbar>
 
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
     <header class="masthead little">
         <div class="container h-100">
             <div class="row h-100">
@@ -91,7 +93,8 @@
                         <div class="col-md-8 right">
                             <div class="row block-sept">
                                 <div class="col-md-12">
-                                    <p class="book orange-medium">These are discrete functional units of DNA, such as promoters or RBSs. They cannot be subdivided in smaller component parts. We obtained these parts by primer extension and PCR or by synthesis de novo.</p>
+                                    <p class="book orange-medium">Our basic parts consist on the alpha and beta chains of the HLA-DQ receptor. Both can be obtained from genomic DNA of any celiac patient by PCR following the protocol that we designed in our <a href="Basic_Part.html" target="_blank">basic parts page</a>.</p>
+                                    <p class="book orange-medium">However, to get and submit the parts, we synthetized them by PCR after performing a codon optimization for expression in <i>E. coli</i>. The aminoacidic sequence was obtained from the genomic sequence of a celiac patient.</p>
                                 </div>
                             </div>
                         </div>
@@ -140,13 +143,13 @@
                    <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="row justify-content-center">
-                                <h2 class="section-heading white">Composites Parts</h2>
+                                <h2 class="section-heading white">Composite Parts</h2>
                             </div>
                         </div>
                         <div class="col-md-8 right">
                             <div class="row block-sept">
                                 <div class="col-md-12">
-                                    <p class="book white">We have created several functional units made from the combination of other basic parts in order to make our project possible.</p>
+                                    <p class="book white">We have created several functional units made from the combination of the HLA-DQ basic parts. The objective of our composite parts is to find a suitable expression system for the HLA-DQ protein, which is the basis of our sensor.</p>
                                 </div>
                             </div>
                         </div>
@@ -185,34 +188,8 @@
     </section>
 	
     <footer></footer>
-
-    <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrapbundle.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="scripts/jqueryeasing.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="scripts/new-age.js"></script>
-
-    <script src="scripts/scrollsensitive.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){    
-            //Check if the current URL contains '#'
-            if(document.URL.indexOf("#")==-1){
-                // Set the URL to whatever it was plus "#".
-                url = document.URL+"#";
-                location = "#";
-        
-                //Reload the page
-                location.reload(true);
-            }
-        });
-        </script>
+ 
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
 
 </body>
 

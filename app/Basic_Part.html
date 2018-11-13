@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/goodload.css">
 
     <!-- Habilitar nomes al app per veure les funcions Jquery -->
-    <script src="/dist/js/vendor.js"></script>
+    <script src="dist/js/vendor.js"></script>
 
     <title>BIO IQS</title>
 
@@ -64,6 +64,8 @@
         <!-- p>Placeholder for iGEM Navbar</p> -->
     </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
     <navigationbar></navigationbar>
+    
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
 
     <header class="masthead little">
         <div class="container h-100">
@@ -71,7 +73,7 @@
                 <div class="col-lg-7 my-auto">
                     <div class="header-content header-xl">
                         <h1 class="mb-5">Wet Lab | Personalization (PCRs)</h1>
-                        <a href="http://2018.igem.org/Team:BioIQS-Barcelona/Basic_Part#pcr-person" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                        <a href="#pcr-person" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +96,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 mx-auto block-sept">
-                        <a class="js-scroll-trigger" href="http://2018.igem.org/Team:BioIQS-Barcelona/Basic_Part#pcr-person#cl-description"><span class="arrow down"></span></a>
+                        <a class="js-scroll-trigger" href="#cl-description"><span class="arrow down"></span></a>
                     </div>
                 </div>
             </div>
@@ -114,7 +116,7 @@
                         </div>
                         <div class="col-md-7 left center">
                             <div class="col-md-12 mx-auto image">
-                                <img class="img-f" src="img/aa_estrategia.png">
+                                <img class="img-f" src="images/aa_estrategia.png">
                             </div>
                         </div>
                         <div class="col-md-6 right block-desc-t">
@@ -123,7 +125,7 @@
                         </div>
                         <div class="col-md-6 left block-desc-t">
                             <div class="col-md-12 mx-auto image">
-                                <img src="img/pcr1.png">
+                                <img src="images/pcr1.png">
                             </div>
                         </div>
                         <div class="col-md-6 right">
@@ -132,7 +134,7 @@
                         </div>
                         <div class="col-md-6 left center">
                             <div class="col-md-12 mx-auto image">
-                                <img src="img/pcr2.png">
+                                <img src="images/pcr2.png">
                             </div>
                         </div>
                         <div class="col-md-6 right">
@@ -141,7 +143,7 @@
                         </div>
                         <div class="col-md-6 left">
                             <div class="col-md-12 mx-auto image">
-                                <img class="img-f" src="img/pcr3def.png">
+                                <img class="img-f" src="images/pcr3def.png">
                             </div>
                         </div>
                     </div>
@@ -165,13 +167,13 @@
                         </div>
                     </div>
                     <div class="col-md-12 mx-auto block-sept">
-                        <a class="js-scroll-trigger" href="http://2018.igem.org/Team:BioIQS-Barcelona/Basic_Part#"><span class="arrow down"></span></a>
+                        <a class="js-scroll-trigger" href="#collab-description"><span class="arrow down"></span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="st-description block-desc" id="cl-description">
+    <section class="st-description block-desc" id="collab-description">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mx-auto">
@@ -185,13 +187,13 @@
                         </div>
                         <div class="col-md-7 center">
                             <div class="col-md-12 mx-auto image">
-                                <img class="img-f" src="img/pcr_collaboration.png">
+                                <img class="img-f" src="images/pcr_collaboration.png">
                             </div>
                         </div>
                     </div>
                     <p class="orange">Note that P1,P2,P3,P4,P1*,P2*,P3* and P4* refer to the primers used to obtain the &alpha; chain, whereas P1',P2',P3’,P4’,P1’,P2’,P3’* and P4’* were used to obtain the &beta; chain.</p>
                     <div class="col-md-4 button">
-                        <a class="text-transform" href="files/primer_list.pdf" target="_blank">View &amp; download PDF <i class="fas fa-file-download"></i></a>
+                        <a class="text-transform" href="images/primer_list.pdf" target="_blank">View &amp; download PDF <i class="fas fa-file-download"></i></a>
                     </div>
                 </div>
             </div>
@@ -201,33 +203,8 @@
 	
     <footer></footer>
 
-    <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrapbundle.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="scripts/jqueryeasing.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="scripts/new-age.js"></script>
-
-    <script src="scripts/scrollsensitive.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){    
-            //Check if the current URL contains '#'
-            if(document.URL.indexOf("#")==-1){
-                // Set the URL to whatever it was plus "#".
-                url = document.URL+"#";
-                location = "#";
-        
-                //Reload the page
-                location.reload(true);
-            }
-        });
-        </script>
 
 </body>
 

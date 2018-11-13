@@ -31,7 +31,7 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: #ff9800;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -1528,4 +1528,33 @@ footer ul li a.active {
 .btn-xl {
     font-size: 11px;
     padding: 15px 45px;
+}
+
+
+.scrollUp{
+    transform: translateY(-56px);
+}
+
+
+p a:hover, h4 a:hover {
+    color: black
+}
+
+
+.dropdown-item.below-header {
+    
+    background-color: #f8f9fa9f;
+/*    background-color: rgb(248, 189, 113); */
+}
+
+.dropdown-item.below-header:hover {
+    color: rgb(239, 142, 78);
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+#meet-us-team:hover{
+    color: white; /*si vull canviar color lletres meet us pagina team*/
+    border-color: #7aaae9;
+    background-color: #7aaae9;
 }

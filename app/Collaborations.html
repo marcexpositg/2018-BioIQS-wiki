@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/goodload.css">
 
     <!-- Habilitar nomes al app per veure les funcions Jquery -->
-    <script src="/dist/js/vendor.js"></script>
+    <script src="dist/js/vendor.js"></script>
 
     <title>BIO IQS</title>
 
@@ -65,7 +65,7 @@
     </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
     <navigationbar></navigationbar>
 
-    <button onclick="topFunction()" id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
 
     <header class="masthead little">
         <div class="container h-100">
@@ -73,7 +73,7 @@
                 <div class="col-lg-7 my-auto">
                     <div class="header-content">
                         <h1 class="mb-5">Project | Collaborations</h1>
-                        <a href="http://2018.igem.org/Team:BioIQS-Barcelona/Collaborations#collaborate" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                        <a href="#collaborate" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
                     </div>
                 </div>
             </div>
@@ -85,13 +85,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 mx-auto">
-                    <h2 class="section-heading orange">Collaborate is a must!</h2>
+                    <h2 class="section-heading orange">Collaboration is a must!</h2>
                     <div class="col-md-auto">
                         <h4 class="book orange block-sept comas"><i>When it comes to research, it is essential to establish collaborations with other teams. In the iGEM competition, there are several ways to share, communicate and set up a network with the community.</i></h4>
                     </div>
                 </div>
                 <div class="col-md-12 mx-auto block-sept">
-                    <a class="js-scroll-trigger a-arrow" href="http://2018.igem.org/Team:BioIQS-Barcelona/Collaborations#cl-description"><span class="arrow down"></span></a>
+                    <a class="js-scroll-trigger a-arrow" href="#cl-description"><span class="arrow down"></span></a>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
                                     <h3 class="orange-medium book">1st</h3>
                                     <p class="book orange">The obtention of the genes that codify for the &alpha; and &beta; chains of the HLA-DQ protein from a celiac patient.</p>
                                     <div class="col-md-6 button">
-                                        <a class="text-transform" href="Basic_Part.html">View PCR Strategy</a>
+                                        <a class="text-transform" href="Basic_Part.html">View basic parts</a>
                                     </div>
                                 </div>
                             </div>
@@ -121,9 +121,9 @@
                             <div class="row block-sept">
                                 <div class="col-md-12">
                                     <h3 class="orange-medium book">2nd</h3>
-                                    <p class="book orange">To design an expression vector for the heterologous expression of the HLA-DQ in the <i>E.coli</i>.</p>
+                                    <p class="book orange">The design of an expression system for the heterologous expression of the HLA-DQ in <i>E. coli</i>.</p>
                                     <div class="col-md-9 button">
-                                        <a class="text-transform" href="Parts.html">View expression Strategy</a>
+                                        <a class="text-transform" href="Parts.html">View composite parts</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,21 +132,23 @@
                         <div class="col-md-12 mx-auto">
                             <div class="row justify-content-center block-desc">
                                 <div class="col-md-8">
-                                    <p class="book orange-medium text-center">The first strategy implies using a DNA sample from a celiac patient. With this in mind, we considered testing the HLA gene extraction protocol that we designed during this summer using a different DNA sample.</p>
+                                    <p class="book orange-medium text-center">The first strategy implies using a DNA sample from a celiac patient. With this in mind, we considered testing the designed HLA gene extraction protocol using DNA samples of different patients.</p>
+                                    <p class="book orange-medium text-center">This would demonstrate that the PCR protocol we have designed to obtain the personalized HLA-DQ of each patient could be applied to all the users of the sensor.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row block-desc-b">
+                    <div class="row block-desc-b">
                         <div class="col-md-6 right">
                             <h3 class="orange-intense">Why?</h3>
                             <p class="book orange">It would help us to check whether our protocol is robust or not. In other words; if it could be used to extract the HLA-DQ genes from any celiac patient.</p>
 
-                            <p class="book orange">As explained in <a class="link" href="Standaritzation.html">PCR standardization</a>, the resulting genomic Multiple Sequence Alignment (MSA) between the primers designed and the HLA-DQ genes surprisingly resulted in a perfect alignment for sequences sharing CD-DQ haplotypes. This means, for primer regions, all DQ2-associated sequences match perfectly, and the same happens on DQ8. Moreover, for P2, P3, P1’ and P4’, primer region alignment is perfect, and so, there is no need to edit the standard primers.
+                            <p class="book orange">As explained in <a class="link" href="Standardization.html">PCR standardization</a>, the resulting genomic Multiple Sequence Alignment (MSA) between the primers designed and the HLA-DQ genes surprisingly resulted in a perfect alignment for sequences sharing CD-DQ haplotypes. This means, for primer regions, all DQ2-associated sequences match perfectly, and the same happens on DQ8. Moreover, for P2, P3, P1’ and P4’, primer region alignment is perfect, and so, there is no need to edit the standard primers.
                             </p>
                         </div>
                         <div class="col-md-6 left">
-                            <h3 class="orange-intense">To this aim :</h3>
+                            <h3 class="orange-intense">To this aim:</h3>
                             <p class="book orange">The collaboration with the iGEM UPF team was essential. To make things easy, we provided them with a detailed and comprehensive PCR protocol. The 19 paged dossier includes all the information necessary to extract the genomic DNA from a patient's saliva and to set up the PCRs.</p>
 
                             <p class="book orange">We invited them to ask for any celiac friend up to give them his/her DNA through a sample of saliva. In this context, the iGEM UPF team conducted two sets of PCRs, one using a DNA sample from a friend, and the other, using Roger's DNA as a control.</p>
@@ -197,7 +199,7 @@
                                         <!-- Card body -->
                                         <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
                                             <div class="card-body wiki-cont">
-                                                <p class="orange book">It proofs we successfully developed a protocol to extract the HLA-DQ genes from any celiac patient.</p>
+                                                <p class="orange book">It proofs that we successfully developed a protocol to extract the HLA-DQ genes from any celiac patient.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -220,7 +222,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 image">
-                            <img class="img-f" src="img/protocols-pres.png">
+                            <img class="img-f" src="images/protocols-pres.png">
                         </div>
                     </div>
 
@@ -287,10 +289,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                            <h3 class="orange-intense">Spanish MeetUp</h3>
+                    </div>
                     <div class="row block-desc-b">
                         <div class="col-md-6 right">
-                            <h3 class="orange-intense">Spanish MeetUp</h3>
-                            <p class="book orange">The Spanish Meet Up organized by the UPF-CRG Barcelona iGEM team took place between over the last week of August. During this days, teams engaged in very diverse activities like project presentations, beach volley, listening to synthetic biology professionals’ lectures and a city tour. Five teams were present in the Spanish Meet Up: UPF-CRG Barcelona (the organizers, working on engineering an <i>E. coli</i> strain to increase palmitic acid uptake), <a class="link" href="http://2018.igem.org/Team:Madrid-OLM" target="_blank">OLM-Madrid</a>, <a class="link" href="http://2018.igem.org/Team:Navarra_BG" target="_blank">Navarra</a>, <a class="link" href="http://2018.igem.org/Team:Grenoble-Alpes">Grenoble</a> and us.</p>
+                            <p class="book orange">The Spanish Meet Up organized by the UPF-CRG Barcelona iGEM team took place between over the last week of August. During this days, teams engaged in very diverse activities like project presentations, beach volley, listening to synthetic biology professionals’ lectures and a city tour. Five teams were present in the Spanish Meet Up: UPF-CRG Barcelona (the organizers, working on engineering an <i>E. coli</i> strain to increase palmitic acid uptake), <a class="link" href="http://2018.igem.org/Team:Madrid-OLM" target="_blank">OLM-Madrid</a>, <a class="link" href="http://2018.igem.org/Team:Navarra_BG" target="_blank">Navarra</a>, <a class="link" href="http://2018.igem.org/Team:Grenoble-Alpes" target="_blank">Grenoble</a> and us.</p>
 
                             <p class="book orange">Maybe the most fruitful part of the meeting was the project presentations of each team. Our team did a very detailed and sincere presentation of our iGEM project. This way, other teams get to know what things we had already done successfully and what were our challenges. We believe that presenting all the information about the project and identifying the strengths and the weaknesses of it help establishing collabortions between teams and receiving feedback and help. In fact, during the time for questions, we received multiple ideas to incorporate to our project. One of the greatest ideas was given by Oscar from UPF-CRG Barcelona, which said that designing a mobile app to read the result of the sensor and connecting to the cloud to send the information about this analysis (restaurant, dish, date and result) could create a very useful network/database for the users of the sensor.</p>
 
@@ -317,17 +321,17 @@
                     <div class="row block-sept">
                         <div class="col-md-4">
                             <div class="image">
-                                <img class="img-f" src="img/spanish_meetup.jpg">
+                                <img class="img-f" src="images/spanish_meetup.jpg">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="image">
-                                <img class="img-f" src="img/spanish_meetup_2.jpg">
+                                <img class="img-f" src="images/spanish_meetup_2.jpg">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="image">
-                                <img class="img-f" src="img/spanish_meetup_3.jpg">
+                                <img class="img-f" src="images/spanish_meetup_3.jpg">
                             </div>
                         </div>
 
@@ -341,55 +345,8 @@
 	
     <footer></footer>
 
-    <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrapbundle.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="scripts/jqueryeasing.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="scripts/new-age.js"></script>
-
-    <script src="scripts/scrollsensitive.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){    
-            //Check if the current URL contains '#'
-            if(document.URL.indexOf("#")==-1){
-                // Set the URL to whatever it was plus "#".
-                url = document.URL+"#";
-                location = "#";
-        
-                //Reload the page
-                location.reload(true);
-            }
-        });
-        </script>
-
-<script>
-    // When the user scrolls down 200px from the top of the document, show the button
-    window.onscroll = function() {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 500) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
-</script>
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
 
 
 </body>

@@ -15,8 +15,8 @@ module.exports = function(root) {
         teamName: 'BioIQS-Barcelona'
     };
 
-    const imagetypes = '{png,jpg,gif,svg}';
-    const fonttypes = '{ttf,otf,woff}';
+    const imagetypes = '{png,jpg,gif,svg,jpeg,pdf,txt}';
+    const fonttypes = '{ttf,otf,woff,svg,woff2,eot}';
 
     // Listed file sources for all tasks. Note use of glob patterns and wildcarding.
     // Used by any build tasks.

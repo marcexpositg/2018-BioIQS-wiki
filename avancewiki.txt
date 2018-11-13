@@ -1,0 +1,88 @@
+afegir classe text-center qualssevol cosa que vulguem centrar.
+
+Team:
+    - Tipu de lletra darrera cartes offline no funcional
+    - Provar els linkls que sembla que s'obren 2 vegades.
+
+Wiki-editing:
+    - Canviar descripció del 1.2
+    - Ficar enllaços a totes les cartes amb els links als videos en espanyol.
+    - Podria ficar uns modals amb la portada del video i que digues si espanol o anglés.
+
+Integrated_HP:
+    - Entrevista a la de l'associació de Celíacs.
+
+Description:
+    - Falta ficar algunes imatges a cada apartat
+
+Wiki:
+    - No va al github.
+
+Results:
+    - Treuria el punt 4.
+
+Collaborations:
+    - Els links de collaborations són diferents que en les altres pàgines.
+    FAN SERVIR CLASSE LINKS -> CONSIDERAR QUIN TIPUS DE LINK VULL UTILITZAR
+
+Botó TOP:
+    - No se perquè no fa un scroll bo fins al top, i ho fa de cop! A new age.js ho descric
+
+Model:
+    Perquè quan cliques a ReadMore darrera les cartes s'obra una pestanya nova?
+    - Canvio 2a fletxeta q tornava cap a dalt a versió germana xavi.
+
+Basic Part:
+    - Afegir link descarrega PDF directe de internet
+
+Team:
+    - Roger conte que pense de la biologia sintètica no està ben ficada la resposta és repetida.
+
+composite Part:
+    - Els links del CSS enllaçen a imatges online, per la versió local ho podria canviar
+
+Parts:
+    - Afegir taula ONLINE
+    - Afegir links que vagi a basic parts i a composite parts
+
+DryLab:
+    - Quadrar l'alineament de les 3 parts d'abaix
+    - Centrar el títol d'aquestes parts.
+
+
+JS:
+    -jquery easing és el responsable de scroll suau de les fletxes, res més.
+    -newage és el responsable de la barra que canvia de color i del jquery easing, per tant, si no hi és, el jquery easing és com si no hi fos.
+     ha d'anar posterior al jquery easing
+    -bootstrap és el responsable de la Navbar que es facin collapse i descollapse, i tb els acordeons
+    -jquery és necessitat per tots 3.
+    -scrollsensitive.js NO FA RES, pq actua al header i no a la navbar que és on hauria d'actuar.
+
+    per tant l'ordre ha de ser:
+    jquery
+    bootstrap
+    newage
+    jquery easing.
+
+
+    A NEWAGE S'HA DE TREURE EL PRIMER CARÀCTER $ DE TOT EL FITXER PQ NO DONGUI ERROR!!
+
+    pq si que van els acordions i no la barra doncs?
+
+
+
+
+ DINS DE VENDOR HI HA D'HAVER LES FUNCIONS DE JQUERY QUE AFEGIM:
+
+ - en el arxiu NewAge.js Necessitem .Easein (de jquery easing) i també .collapse (de bootstrapbundle)
+ - per aixo es copien el jquery easin i boostrapbundle.js just a continuació de jquery de dins carpeta dist de bower_components
+ - i aixi poden guardarse a vendor.js al final i  executarse quan arriba  new age (wiki.js) pq ja s'ha carregat prèviament.
+
+ ** Com que boostrapbundle estava dos vegades quan clicava el link de la navbar s'executava dos vegades, per aixo he tret la copia de la carpeta scripts.
+
+
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <script src="/js/wiki.js"></script> 
+

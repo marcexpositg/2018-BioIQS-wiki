@@ -3,12 +3,12 @@ var jq = require('jquery');
 // Code courtesy of Mohamed Hasan
 // https://codepen.io/Mhmdhasan/pen/mAdaQE
 
-jq(document).ready(function () {
+$(window).on("load",function () {
   
   'use strict';
-  
+
    var c, currentScrollTop = 0,
-       navbar = jq('header');
+       navbar = jq('nav');
 
     var hovered = false;
 
@@ -21,7 +21,7 @@ jq(document).ready(function () {
 
    jq(window).scroll(function () {
       var a = jq(window).scrollTop();
-      var b = navbar.height();
+      var b = 2 * navbar.height();
      
       currentScrollTop = a;
      

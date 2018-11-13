@@ -1,0 +1,83 @@
+Changes in node_modules\igem-wikibrick\gulp\tasks\unit\
+
+See: adding or modifying gulp tasks
+https://github.com/Virginia-iGEM/igem-wikibrick/tree/master/docs/programmers-guide#6-adding-or-modifying-gulp-tasks
+
+1. When asked for Team name, didn't change the teamName value correctly in the config.js file:
+    Before:
+
+    // Teaminfo. Duh.
+    const teaminfo = {
+        year: 2018,
+        teamName: 'Virginia'
+    };
+
+    Now:
+
+    // Teaminfo. Duh.
+    const teaminfo = {
+        year: 2018,
+        teamName: 'BioIQS-Barcelona'
+    };
+
+    Without this change ANYTHING worked and the wiki didn't upload fine.
+
+2. Added jpeg, pdf and txt to config.js as image files: (we could also have renamed .jpeg images as .jpg) or include the pdf/txt files manually.
+    Before:
+        const imagetypes = '{png,jpg,gif,svg}';
+    After:
+        const imagetypes = '{png,jpg,gif,svg,jpeg,pdf,txt}';
+
+    Added svg, woff2 and eof to font types, because fonts from font awesome were on the app but not on the build folder.
+    Before:
+        const fonttypes = '{ttf,otf,woff}';
+    After:
+        const fonttypes = '{ttf,otf,woff,svg,woff2,eot}';
+
+    Both things worked nicely!
+    
+3. Our web designer used the tag <header> to style some "jumbotron-like" parts of the page. This caused a conflict
+when using the tags <header></header> to insert the Navigation Bar template. For this reason, I changed the tags in
+all pages .html files from header to <navigationbar> (which is never used, avoiding conflicts). Of course, I also had
+to change the script in the beggining of the page which inserts the .html code of the templates in the page (by the way,
+excellent idea on how to manage templates locally - before, I used iframes which is NOT practical AT ALL).
+You could think on using that. I know it is only a problem if you use the header class, but I think that could be useful
+for teams which have already started creating their wiki before using the igem-wikibrick tool.
+
+    Before:
+   
+    <script>
+        $(function () {
+            $('header').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+        [[etc...]]
+
+    <body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <p>Placeholder for iGEM Navbar</p>
+    </div>
+    <header></header>
+
+
+    After (note the 3rd and the last line, 'navigationbar' is used intead of 'header'):
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+        [[etc...]]
+
+    <body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <p>Placeholder for iGEM Navbar</p>
+    </div>
+    <navigationbar></navigationbar>
+
+
+4. 

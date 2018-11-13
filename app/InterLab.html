@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/goodload.css">
 
     <!-- Habilitar nomes al app per veure les funcions Jquery -->
-    <script src="/dist/js/vendor.js"></script>
+    <script src="dist/js/vendor.js"></script>
 
     <title>BIO IQS</title>
 
@@ -64,6 +64,8 @@
         <!-- p>Placeholder for iGEM Navbar</p> -->
     </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
     <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
 
     <header class="masthead little">
         <div class="container h-100">
@@ -189,7 +191,7 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 center">
                                                         <div class="col-md-12 image">
-                                                            <img class="block-desc-t img-m" src="img/od-600.jpeg">
+                                                            <img class="block-desc-t img-m" src="images/od-600.jpeg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -219,7 +221,7 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 center">
                                                         <div class="col-md-12 image">
-                                                            <img class="block-desc-t img-m" src="img/straight-one.jpeg">
+                                                            <img class="block-desc-t img-m" src="images/straight-one.jpeg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -247,7 +249,7 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 center">
                                                         <div class="col-md-12 image">
-                                                            <img class="block-desc-t img-m" src="img/straight-two.jpeg">
+                                                            <img class="block-desc-t img-m" src="images/straight-two.jpeg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -275,10 +277,10 @@
                                                <div class="row justify-content-center">
                                                     <div class="col-md-12 center">
                                                         <div class="col-md-6 image">
-                                                            <img class="block-desc-t img-m" src="img/raw-read-one.jpeg">
+                                                            <img class="block-desc-t img-m" src="images/raw-read-one.jpeg">
                                                         </div>
                                                         <div class="col-md-6 image">
-                                                            <img class="block-desc-t img-m" src="img/raw-read-two.jpeg">
+                                                            <img class="block-desc-t img-m" src="images/raw-read-two.jpeg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -306,7 +308,7 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 center">
                                                         <div class="col-md-12 image">
-                                                            <img class="block-desc-t img-m" src="img/final-table.jpeg">
+                                                            <img class="block-desc-t img-m" src="images/final-table.jpeg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -357,33 +359,7 @@
 	
     <footer></footer>
 
-    <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrapbundle.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="scripts/jqueryeasing.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="scripts/new-age.js"></script>
-
-    <script src="scripts/scrollsensitive.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){    
-            //Check if the current URL contains '#'
-            if(document.URL.indexOf("#")==-1){
-                // Set the URL to whatever it was plus "#".
-                url = document.URL+"#";
-                location = "#";
-        
-                //Reload the page
-                location.reload(true);
-            }
-        });
-        </script>
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
 
 </body>
 
