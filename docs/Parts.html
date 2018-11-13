@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Wet Lab | Parts</h1>
+                        <a href="#cl-description" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h2 class="section-heading orange">Basic Parts</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange-medium">Our basic parts consist on the alpha and beta chains of the HLA-DQ receptor. Both can be obtained from genomic DNA of any celiac patient by PCR following the protocol that we designed in our <a href="Basic_Part.html" target="_blank">basic parts page</a>.</p>
+                                    <p class="book orange-medium">However, to get and submit the parts, we synthetized them by PCR after performing a codon optimization for expression in <i>E. coli</i>. The aminoacidic sequence was obtained from the genomic sequence of a celiac patient.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h4 class="section-heading orange">BBa_K2879666: HLA-DQA:</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-10 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange-medium">This biobrick corresponds to the HLA-DQA1*05:01 gene variant. Thus, when coupled to the protein encoded by the HLA-DQB1*02:01 gene variant (BBa_K2879800) it will form the HLA haplotype DQ2. This part only contains the exons 2 and 3 of the protein (which encode the extracellular domains of the protein), for more information see the design tab. Therefore, this part (HLA-DQA1) can be used in combination with part BBa_K2879800 (HLA-DQB) to form a variant of the HLA-DQ complex which recognizes the deaminated gliadin peptide, which plays a central role in celiac disease.</p>
+                                    <p class="book orange-medium">Note that this biobrick has been synthetized de novo and it has been codon optimized to be expressed in E. coli BL21. See the detailed information of this biobrick for more information on how to form the complex HLA-DQ by expressing this part in combination with part BBa_K2879800 in E. coli. See the design tab to see how the sequence has been obtained and codon optimized.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h4 class="section-heading orange">BBa_K2879800: HLA-DQB:</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-10 right fletxa-d-l">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange-medium">This biobrick corresponds to the HLA-DQB1*02:01 gene variant. Thus, when coupled to the protein encoded by the HLA-DQA1*05:01 gene variant (BBa_K2879666) it will form the HLA haplotype DQ2. This part only contains the exons 2 and 3 of the protein (which encode the extracellular domains of the protein), for more information see the design tab. Therefore, this part (HLA-DQB1) can be used in combination with part BBa_K2879666 (HLA-DQA1) to form a variant of the HLA-DQ complex which recognizes the deaminated gliadin peptide, which plays a central role in celiac disease.</p>
+                                    <p class="book orange-medium">Note that this biobrick has been synthetized de novo and it has been codon optimized to be expressed in E. coli BL21. See the detailed information of this biobrick for more information on how to form the complex HLA-DQ by expressing this part in combination with part BBa_K2879666 in E. coli. See the design tab to see how the sequence has been obtained and codon optimized.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="st-description block-desc b-orange-intense" id="collaborate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                   <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h2 class="section-heading white">Composite Parts</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">We have created several functional units made from the combination of the HLA-DQ basic parts. The objective of our composite parts is to find a suitable expression system for the HLA-DQ protein, which is the basis of our sensor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h4 class="section-heading white">BBa_K2879100: HLA-DQ a+b polycistronic</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-10 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">This composite is formed by the &alpha; and &beta; chain of the human HLA-DQ flanked by the restriction enzymes <i>NdeI</i> and <i>SacI/SalI</i>. Each chain is separated by an intergenic regions containing a RBS for translation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h4 class="section-heading white">BBa_K2879102: LZipper+HLADQA+HLADQB+NdeISacI</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-10 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">This composite encodes for the &alpha; and &beta; chains of the human HLADQ, each chain is linked to a Fos/Jun domain for protein stability. Both chains are separated by an intergenic region that contains a RBS. The entire construct is flanked by the restriction enzymes <i>NdeI</i> and <i>SacI/SalI</i>. A Strep Tag is placed after the &alpha; chain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer></footer>
+ 
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+</body>
+
+</html>
+
+

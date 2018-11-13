@@ -1,0 +1,15 @@
+#top, #top_title, #top_menu_under {
+    display: none;
+}
+
+.fixed-top {
+/*    top: 9px; THIS SHOULD BE INTRODUCED IN THE WEB VERSION OF THE WIKI TO LEAVE SPACE FOR THE IGEM NAVIGATION BAR*/
+}
+
+
+/* Overcoming the propierties defined by .center{ } and . * center * { } in goodload.css*/
+/* Only for the local version, define this to overcome the goodload.css style */
+.center{
+    text-align: initial;
+}
+/*This should be erased in the web-version of the wiki*/

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Project | Overview</h1>
+                        <a href="#cl-description" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <h2 class="section-heading orange">Human Practices</h2>
+                        <div class="col-md-8 right fletxa-d-l">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange-medium">Our project aims to offer a real-world solution to ease celiac patient's life. Consequently, we engaged with the celiac community in an integrative way. See how <a href="Human_Practices.html">the necessities of the celiac community</a> shaped our project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc b-orange-intense" id="collaborate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <h2 class="section-heading white">PCR standardization</h2>
+                        <div class="col-md-8 right fletxa-d-l">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">The personalized gluten sensor is based on the same molecule used by the human immune system cells to detect the presence of gluten, the <a href="Celiac_disease.thml">HLA-DQ receptor</a>. </p>
+                                    <p class="book white">Different variants of this receptor detect different gluten epitopes. Therefore, the sensor can be personalized if it incorporates the genetic variant of the HLA-DQ receptor of each patient. However, personalization often comes at a higher cost. Our team designed and characterized a <a href="Basic_Part.html">standard PCR protocol</a> that could be used to obtain the genetic variant of each user to make the personalization of the sensor feasible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h2 class="section-heading orange">Expression system</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8 right fletxa-d-l">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange-medium">Since our sensor is based in a human protein, the expression system of it needs to be thoroughly designed. Our team carefully studied different approaches to make the HLA-DQ protein expression possible in <i>E. coli</i>. Additionally, other expression hosts that can carry post-transductional modifications, such as <i>P. pastoris</i>, have been also considered.</p>
+                                    <p class="book orange-medium">We have tested and characterized this expression systems to choose which one would be used to create our sensor. See more in our <a href="Composite_Part.html">composite parts</a> page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc b-orange-intense" id="collaborate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h2 class="section-heading white">Detection system</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8 right fletxa-d-l">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">We believe in the inner beauty of every project. Therefore, we are aware that the experimental work is essential, but nothing could be developed without a solid model. Our team designed a theoretical model of the sensor, which studies the detection system of our sensor. See more in our <a href="Modelling.html">modelling page</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <h2 class="section-heading orange">Collaborations</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange-medium">One of the most exciting things of being part of the iGEM community is the possibility to make collaborations with other teams from all around the world. When it comes to research, it is essential to establish collaborations with other teams. In the iGEM competition, there are several ways to share, communicate and set up a network with the community. See how we engaged with other teams in our <a href="Collaborations.html">collaborations page</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer></footer>
+
+  
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+
+</body>
+
+</html>
+
+

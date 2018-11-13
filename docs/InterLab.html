@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Wet Lab | InterLab</h1>
+                        <a href="#interlab" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="interlab text-center" id="interlab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <h2 class="section-heading orange">Overview</h2>
+                    <div class="col-md-auto">
+                        <h4 class="book orange block-sept comas"><i>This is the first edition of iGEM BioIQS-Barcelona to take part in the InterLab Study. The InterLab Study is an essential part of the iGEM competition and it is increasingly being taken part by more institutions each year. The goal of this study is to evaluate the variability and reproducibility of the measurements taken among different labs that have different equipment by using the same protocol.</i></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#cl-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <h3 class="orange-intense">Why?</h3>
+                            <p class="book orange">As a team, we were interested in participating in this study because we were curious in expectation to see whether the measures taken in our lab would be the same that the ones taken in the other side of the globe; and of course, because we love doing science.</p>
+
+                            <p class="book orange">Although it was not directly related to our project, this study allowed us not to underestimate the value of replicates and to be more aware of the adequate controls to be used in the experiments.</p>
+                        </div>
+                        <div class="col-md-6 left">
+                            <h3 class="orange-intense">Interlab Topic</h3>
+                            <p class="book orange">This year, the InterLab study is focused on trying to reduce the lab-to-lab variability in fluorescence measurements by normalizing to colony-forming units (CFU) instead of optical density (OD). Fluorescence measurements are important in synthetic biology due to the use of the Green Fluorescent Protein (GFP) as a standard reporter. One source of variability is the number of cells in the sample. This year’s InterLab study will check if counting CFU helps to reduce this variability better than using OD as a standard. Reducing the variability in fluorescence measurements between laboratories would bring synthetic biology closer to an engineering discipline by facilitating standardization.</p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                                <div class="col-xs-12 col-md-12 block-desc-b">
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                                <h3 class="mb-0 title-accordion orange-intense">
+                                                    Protocols and settings<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">All the protocols to be followed were provided by iGEM and can be found here. For cell transformation, electrocompetent cells were used and transformed following the electroporation protocol. Measurements were taken with SpectraMax M2 plate reader with the following settings:</p>
+                                                <ul>
+                                                    <li>For Absorbance reads:
+                                                        <ul>
+                                                            <li>Wavelength: 600nm</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>For Fluorescence reads:
+                                                        <ul>
+                                                            <li>Excitation wavelength: 485 nm</li>
+                                                            <li>Emission wavelength: from 500nm to 540nm at 5nm step</li>
+                                                            <li>PMT Gain: Automatic</li>
+                                                            <li>Flashes per reading: 6</li>
+                                                            <li>Shake: 5s before reading</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+
+
+                                </div>
+
+                            </div>
+
+                            <h3 class="orange-intense">Results</h3>
+
+
+
+                        </div>
+
+                        <!--  end accordion-->
+
+
+                        <div class="col-md-12">
+                            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                                <div class="col-xs-12 col-md-12 ">
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                <h3 class="mb-0 title-accordion orange-intense">
+                                                    OD600 reference point<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">All the replicates gave the same result and thus, we confirm its reproducibility.</p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-12 center">
+                                                        <div class="col-md-12 image">
+                                                            <img class="block-desc-t img-m" src="images/od-600.jpeg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+
+
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                                    Particle standard curve<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">It is observed in the graph that the standard curve follows a line at a reasonable reliability. Lower values seem to be less reliable probably due to the sensitivity of the plate reader.</p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-12 center">
+                                                        <div class="col-md-12 image">
+                                                            <img class="block-desc-t img-m" src="images/straight-one.jpeg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End accordion -->
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                                    Fluorescence standard curve<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">Fluorescein standard curve seems to be correct since it gives a straight line in both linear and log scale.</p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-12 center">
+                                                        <div class="col-md-12 image">
+                                                            <img class="block-desc-t img-m" src="images/straight-two.jpeg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End accordion -->
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                                    Cell measurements<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">Overall, raw measures give similar results between replicates although there are some inconsistencies between colonies.</p>
+                                               <div class="row justify-content-center">
+                                                    <div class="col-md-12 center">
+                                                        <div class="col-md-6 image">
+                                                            <img class="block-desc-t img-m" src="images/raw-read-one.jpeg">
+                                                        </div>
+                                                        <div class="col-md-6 image">
+                                                            <img class="block-desc-t img-m" src="images/raw-read-two.jpeg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End accordion -->
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                                    Colony Forming Units per 0.1 OD600 E.coli cultures<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">The colonies obtained in this experiment were lower than expected. We believe that this could be caused by a misunderstanding with the protocol so that the cultures were overdiluted prior to spreading them into the Petri plates.</p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-12 center">
+                                                        <div class="col-md-12 image">
+                                                            <img class="block-desc-t img-m" src="images/final-table.jpeg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End accordion -->
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                                    Our experience<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">Overall, the experience with the InterLab was satisfactory. The protocol provided was very clear throughout the entire process, but we had a little confusion with the colony forming units part since we had a misunderstanding with the diagram.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End accordion -->
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+</body>
+
+</html>
+
+

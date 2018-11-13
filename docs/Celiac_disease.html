@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Project | Celiac Disease</h1>
+                        <a href="#understanding" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="understanding" id="understanding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 right">
+                            <h3 class="section-heading orange heights">Understanding Celiac Disease</h3>
+                            <!--                    <h3 class="orange">We would like to present you a brief description of our project on celiac disease:</h3>-->
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">Celiac disease, also known as gluten-sensitive enteropathy, is the most common intestinal disorder of western populations. The disease pathology is characterized by an autoimmune enteropathy caused by an abnormal immune response to dietary gluten peptides that occurs in genetically susceptible individuals1. The overall prevalence of celiac disease in the United States in average-risk groups, according to several studies, is 0.7% to 1.0%.</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <img class="img" src="images/gluten-f.png" alt="Card image cap">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="col-md-12 mx-auto">
+                                <h3 class="section-heading orange heights">Symptoms</h3>
+                                <!--                    <h3 class="orange">We would like to present you a brief description of our project on celiac disease:</h3>-->
+                                <div class="row block-sept">
+                                    <div class="col-md-12">
+                                        <p class="book orange">The ingestion of immunogenic gluten-derived peptides leads to inflammation and intestinal mucosal damage, which may result in a spectrum of:</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <!--                                    <div class="center">-->
+                                        <ul class="list-symp">
+                                            <li><span class="dot"></span>gastrointestinal symptom</li>
+                                            <li><span class="dot"></span>nutritional abnormalities</li>
+                                            <li><span class="dot"></span>systemic complications</li>
+                                            <li><span class="dot"></span>anaemia</li>
+                                            <li><span class="dot"></span>osteoporosis</li>
+                                            <li><span class="dot"></span>secondary autoimmunity</li>
+                                            <li><span class="dot"></span>malignancy</li>
+                                        </ul>
+                                        <!--                                    </div>-->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mx-auto">
+                            <h3 class="section-heading orange text-center">What cells and molecules are involved?</h3>
+                            <!--                    <h3 class="orange">We would like to present you a brief description of our project on celiac disease:</h3>-->
+                            <div class="row block-sept">
+                                <div class="col-md-6">
+                                    <p class="book orange">The primary event of a gluten-induced immune response requires epitope-bearing oligopeptides to have access to lamina propria inside intestinal epithelial layer. Such oligopeptides are efficiently hydrolyzed by peptidases located in the brush border membrane of the differentiated enterocytes before they can be transported across the epithelium.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="book orange">Once in the lamina propria, a deamination step performed by tissue transglutaminase (tTG) is necessary for these peptides to be presented by mature dendritic cells to T cell receptors by using the heterodimer encoded by HLA-DQ2 or DQ8 genes A and B and thus, triggering an immune response.</p>
+                                </div>
+
+                            </div>
+                            <div class="image">
+                                <img class="img-m" src="images/fisio-pat.jpeg">
+                            </div>
+                            <!--                    <a class="js-scroll-trigger" href="#t-project"><span class="arrow down text-center"></span></a>-->
+                            <div class="col-md-12 mx-auto block-desc">
+                                <h3 class="section-heading orange text-center">How does the HLA interact with gliadin peptides?</h3>
+                                <!--                    <h3 class="orange">We would like to present you a brief description of our project on celiac disease:</h3>-->
+                                <div class="row block-sept">
+                                    <div class="col-md-6">
+                                        <p class="book orange">The molecular interaction between a gluten-derived peptide (<b>gliadin</b>) and specific HLA haplotypes has been broadly discussed. It has been exposed that the HLA association in celiac disease can be explained by a superior ability of DQ2/8 haplotypoes to bind the biased repertoire of proline-rich gluten peptides that have survived gastrointestinal digestion and that have been deamidated by tissue transglutaminase.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="book orange">The gliadin–DQ* complex retains critical hydrogen bonds between the MHC and the peptide backbone despite the presence of many proline residues in the peptide that are unable to participate in amide-mediated hydrogen bonds. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mx-auto">
+                                <h3 class="section-heading orange text-center">Gliadin peptides</h3>
+                                <div class="row block-sept">
+                                    <div class="col-md-6">
+                                        <p class="book orange">Gliadin is the water-soluble component of gluten, while glutenin is insoluble. There are three main types of gliadin (&alpha;, γ, and ω), to which the body is intolerant in coeliac disease. Different gliadins are involved in the disease process in a different manner, some fragments being <b>‘toxic’</b> and others <b>‘immunogenic’</b>.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="book orange"> A gliadin peptide is defined as <b>‘toxic’</b> if it is able to induce mucosal damage either when added in culture to duodenal mucosal biopsy, or when administered in vivo on proximal and distal intestine, whereas a fragment is defined <b>‘immunogenic’</b> if it is able to specifically stimulate HLA-DQ2- or DQ8-restricted T cell lines derived from jejunal mucosa or peripheral blood of coeliac patients. </p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img class="img-m" src="images/gliadin_toxic.png">
+                                </div>
+                                <div class="row block-sept">
+                                    <div class="col-md-6">
+                                        <p class="book orange">As mentioned, a common feature among gluten epitopes is the presence of multiple <b>proline</b> and <b>glutamine</b> residues, which make them exceptionally impregnable by gastric, pancreatic and intestinal digestive proteases.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="book orange">Moreover, tTG can hydrolyse glutamine to glutamic acid either at a lower pH or when no acceptor proteins are available, a process leading to an enhanced immunogenicity of gluten peptides.</p>
+                                    </div>
+                                </div>
+                            <div class="col-md-12 mx-auto">
+                                    <h3 class="section-heading orange text-center">HLA-DQ2 and DQ8 structures enhance affinity for deamidated gliadin peptides</h3>
+                                    <div class="row block-sept">
+                                        <div class="col-md-6">
+                                            <p class="book orange">HLA-DQ2 and -DQ8 haplotypes have greater risk of developing the celiac disease. This is because point mutations on HLA-DQ &alpha;- and &beta;-chains results on greater affinity for deamidated gliadin peptides. This deamidated peptides show negatively charged glutamic acid residues that are preferred in positions 4, 6, and 7 of the antigen-binding groove positively charged residues of HLA forming salt bridges.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="book orange">In order to easily evaluate how point residue mutations on HLA-DQ &alpha;- and &beta;-chains can lead to a greater affinity for gliadin peptides, multiple alignment of HLA-DQ protein sequences has been performed and curated for DQ2 and DQ8 haplotypes. HLA-DQA and -DQB protein genotypes alignment was performed with protein sequences from IPD-IMGT/HLA (Directory hosted at the European Bioinformatics Institute) version 3.33.0 using MAFFT default alignment method.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row block-sept">
+                                        <div class="col-md-6 center">
+                                            <div class="col-md-12">
+                                                <p class="book orange">Previous studies (Kim C-Y et al. 2004) have characterized the molecular interactions using PDB crystal structure (1S9V) of HLA-DQ2 complexed with deamidated gliadin peptide (LQPFPQPELPY). Such study proposed an interaction profile of 13 hydrogen bonds between the main-chain atoms of &alpha;I-gliadin and HLA-DQ2.</p>
+                                                <ul>
+                                                    <li class="orange">Ten interactions are mediated by conserved MHC residues (Arg-&alpha;52–CO<sup>P2</sup>, His-&beta;81–CO<sup>P1</sup>, Asn-&beta;82–NH<sup>P2</sup>, Asn-&beta;82–CO<sup>P2</sup>, Asn-&alpha;62–H2O–CO<sup>P4</sup>, Asn-&alpha;11–H2O–CO<sup>P4</sup>, Asn-&alpha;62–NH<sup>P6</sup>, Asn-&alpha;69–CO<sup>P7</sup>, Trp-&beta;61–H2O–CO<sup>P8</sup>, Asn-&alpha;69–NH<sup>P9</sup>).</li>
+                                                    <li class="orange">Three interactions are mediated by polymorphic MHC residues (Tyr-&alpha;9–NH<sub>P4</sub>, Tyr-&alpha;22–H2O–CO<sub>P4</sub>, Lys-&beta;71–H2O–CO<sub>P5</sub>). </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-12 image">
+                                                <div class="col-md-12">
+                                                    <img class="img-f" src="images/interaction_gliadin.png">
+
+                                                </div>
+                                            </div>
+                                            <p class="book orange-medium n-p smll"><b>Putative hydrogen-bonding network in the DQ2–&alpha;I-gliadin complex (shown as red dashes)</b>. &alpha;I-gliadin is shown in yellow (C, yellow; N, blue; O, red). Backbone structure of HLA-DQ &alpha;- and &beta;-chains are shown in green and blue ribbon plots, respectively, and side chains engaged in hydrogen bonding are shown in gray (C, gray; N, blue; O, red). Extracted from Kim, C.-Y., Quarsten, H., Bergseng, E., Khosla, C., &amp; Sollid, L. M. in Proceedings of the National Academy of Sciences 2004; 101(12): 4175–4179.</p>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col-md-12 mx-auto block-desc">
+
+                                    <h3 class="section-heading orange text-center">Point mutations on HLA-DQ residues lead to gliadin binding</h3>
+
+                                    <div class="row block-sept">
+                                        <div class="col-md-6">
+                                            <h3 class="orange text-center">&alpha;-52</h3>
+                                            <div class="image">
+                                                <img class="img-f" src="images/alfa52.png">
+                                            </div>
+                                            <p class="book orange-medium n-p smll"><b>Hidden Markov Models for HLA-DQ-&alpha; chain for residues 50-53.</b> For total HMM, all described HLA-DQA protein genotypes were used. For DQ2- and DQ8-positve, total MSA was curated as follows: DQ2-positive contains HLA-DQA1*0501 or *0505 sequences and DQ8-positive HLA-DQA1*03. DQ2 presents a deletion on R53.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="book orange"><b>Notice that, for non-celiac genotypes, DQ-&alpha; chain presents a glycine on residue 52.</b> On the other hand, celiac-associated haplotypes have an arginine in residue 52, a positive charged residue that allows a salt bridge to be formed with negatively charged glutamic acid residue of gliadin peptides. Thus, the enhanced HLA-DQ heterodimer affinity for gliadin peptide can be explained for HLA-DQ2 and -DQ8 haplotypes. Notice that DQ2-positive presents a deletion on residue &alpha;-53 which is responsible of shifting the short &alpha;-helix towards the long &alpha;-helical stretch of &alpha;-chain.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row block-sept">
+                                        <div class="col-md-6">
+                                            <h3 class="orange text-center">&alpha;-22</h3>
+                                            <div class="image">
+                                                <img class="img-f" src="images/alfa22.png">
+                                            </div>
+                                            <p class="book orange-medium n-p smll"><b>Hidden Markov Models for HLA-DQ-&alpha; chain for residues 20-23.</b> For total HMM, all described HLA-DQA protein genotypes were used. For DQ2- and DQ8-positve, total MSA was curated as follows: DQ2-positive contains HLA-DQA1*0501 or *0505 sequences and DQ8-positive HLA-DQA1*03.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="book orange">Through a network of water-mediated hydrogen bonds, the phenolic OH of Tyr-22 bonds to the P4 carbonyl oxygen and presumably contributes to selective presentation of &alpha;I-gliadin. Interestingly, not celiac-associated HLA presents a Phe residue at the corresponding position.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row block-sept">
+                                        <div class="col-md-6">
+                                            <h3 class="orange text-center">&beta;-71</h3>
+                                            <div class="image">
+                                                <img class="img-f" src="images/beta71.png">
+                                            </div>
+                                            <p class="book orange-medium n-p smll"><b>Hidden Markov Models for HLA-DQ-&alpha; chain for residues 69-72.</b> For total HMM, all described HLA-DQA protein genotypes were used. For DQ2- and DQ8-positve, total MSA was curated as follows: DQ2-positive contains HLA-DQA1*0501 or *0505 sequences and DQ8-positive HLA-DQA1*03. </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="book orange">Particularly striking is a unique positive electrostatic region between the P4 and P6/P7 pockets in DQ2 caused by Lys&beta;71. DQ8 contains a threonine at &beta;71 and has an overall neutral electrostatic potential in this region. Consistent with the structural differences, there is no data available indicating that the &alpha;I-gliadin epitope is recognized in the context of DQ8 in celiac disease patients.
+                                            Notice that, for celiac-associated genotypes, residue 70 is an Arg that can form a salt bridge. On the other hand, for non-celiac-associated genotypes, residue 70 is an uncharged Gly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row block-sept">
+                                        <div class="col-md-6 center">
+                                            <div class="col-md-12">
+                                                <p class="book orange">This spot is particularly interesting since the P6 Glu of αI-gliadin, which is formed by tTG-catalyzed deamidation, participates in an extensive hydrogen-bonding network. Although the DQ2-specific residue, Lys-&beta;71, plays a key role in stabilizing this residue, the x-ray structure reveals a surprisingly complex network of noncovalent interactions. If Gln were present at this position instead of Glu (i.e., the non-deamidated native gliadin peptide), this intricate hydrogen-bonding network would be disrupted. Also, the Gln carbonyl oxygen is a less attractive hydrogen-bond acceptor than the negatively charged Glu carboxylate oxygen.</p>
+                                                <p class="book orange">In vitro binding assay shows that the deamidated αI-gliadin has a 25-fold higher affinity compared with the non-deamidated counterpart, which may be partially due to having a more potent hydrogen-bond acceptor that can form additional protein- to-protein hydrogen bonds, resulting in a more stable gliadin–DQ2 complex.</p> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-12 image">
+                                                <div class="col-md-12">
+                                                    <img class="img-f" src="images/h-bond.png">
+
+                                                </div>
+                                            </div>
+                                            <p class="book orange-medium n-p smll"><b>Hydrogen-bonding network in the epitope-binding site of DQ2.</b> &alpha;I-gliadin is shown in yellow (C, yellow; N, blue; O, red), and HLA-DQ2 &alpha;- and &beta;-chains are shown in gray (C, gray; N, blue; O, red). Gray spheres represent water molecules. Atom-to-atom distances are given in Å. Extracted from Kim, C.-Y., Quarsten, H., Bergseng, E., Khosla, C., &amp; Sollid, L. M.  in Proceedings of the National Academy of Sciences 2004; 101(12): 4175–4179.</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script>
+
+</body>
+
+</html>
+
+

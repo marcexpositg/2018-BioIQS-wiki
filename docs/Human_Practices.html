@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+   
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Outside the Lab | Human Practices</h1>
+                        <a href="#collaborate" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="collaborate text-center" id="collaborate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <h2 class="section-heading orange comas">I Communicate, therefore I exist</h2>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#cl-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right fletxa-d-l">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">Scientific projects arise from the need to solve and face economical, technological and health-related issues, meaning that when a project comes into existence, scientists go from the problem to the answer.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">However, despite keeping in mind the aim, scientists should look beyond because a project <b>does</b> not die when the problem is solved, it stays alive forever. Its impact remains in society. This is why, before starting, it is necessary to define who will be affected.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc b-orange-intense" id="human-why">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h2 class="book white">What’s the problem you want to solve? Why?</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">Once you have answered these two questions, you can identify what people will be benefited from your work.</p>
+                                    <p class="book white">This is the beginning of a laborious and demanding pathway that requires lots of work and effort!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc" id="human-why-resp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 yellow">
+                                    <h4 class="bold orange">Now, imagine that you go to the Doctor because you are sick, but you are not able to explain what hurts you.</h4>
+                                    <h4 class="bold orange">Do you think he could help you? Obviously not.</h4> 
+                                    <h4 class="bold orange">Communication between both parts – helper and helped – is unquestionably essential. Besides, it is a bidirectional process, i.e. the receptor understands the message and provides feedback like another message or an action. Then, receptors must listen to you, hearing is not enough. Implication of the receptor in the project is the key to success.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc b-orange-intense" id="human-why">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h2 class="bold white text-center"><i class="fas fa-bullhorn"></i></h2>
+                                    <h2 class="bold white text-center">Communication</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">Words are the strongest weapon we have, but we usually forget it. This year, the BioIQS team decided to highlight the power of scientific communication for the iGEM competition.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc" id="human-why-resp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h2 class="bold orange text-center"><i class="fas fa-bookmark"></i></h2>
+                                    <h2 class="bold orange text-center">Technicisms and misunderstandings</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">One of the most recognized scientist in history, Albert Einstein, said: <i>“You do not really understand something unless you can explain it to your grandmother”</i>. That means, make it easy… but (and this is a huge but), this does not mean omitting information. Furthermore, the use of technicisms is a double-edged sword. Speakers have to adapt the message to capture public’s attention. If listeners are not familiar with the specific area of the research, try to use some metaphors and comparisons. These tips will help you catch their attention because they will feel what you are explaining a little bit closer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc b-orange-intense" id="human-why">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h2 class="bold white text-center"><i class="fas fa-bullseye"></i></h2>
+                                    <h2 class="bold white text-center">Our goals</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book white">Our communication project is addressed to the non-celiac audience. Why? Because explaining what precautions, what kind of food and what is celiac disease to chefs, waiters, and relatives of celiacs is more useful. We also have proved that gluten-free food tastes the same (or even better) than gluten food <a class="link white" href="Public_Engagement.html" target="_blank">have a look HERE</a>. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	
+    <footer></footer>
+
+   <script src="/js/wiki.js"></script> 
+
+</body>
+
+</html>
+
+

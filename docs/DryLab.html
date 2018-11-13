@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css"> <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Dry Lab | Overview</h1>
+                        <a href="#modelling" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="modelling text-center" id="modelling">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Inner beauty</h2>
+                    <div class="col-md-auto">
+                        <h4 class="book orange block-sept comas"><i>Despite what some people may think, DryLab
+                                occasionally may be equal or more important for a project to develop properly than the
+                                WetLab. Applying this thought to our project, we decided to study some important
+                                aspects and evaluate their viability. More specifically, our work in the DryLab
+                                consisted on:</i></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#cl-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <h3 class="orange-intense">1st Modelling</h3>
+                    </div>
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <p class="book orange">We had several ideas about how the sensor could work, and
+                                eventually, one rose up strongly. The first step when you have an idea, goes through
+                                think about it, understand it and rethink it as many times as it is required. Maybe
+                                seems an intuitive reflection, but constitutes the fundamental part of every
+                                development. Using mathematical models and computer simulations we have been able to
+                                understand the dynamics underlying our sensor, variety of parameters could be tuned,
+                                eventualities could be tested and tendencies could be predicted. </p>
+
+
+                        </div>
+                        <div class="col-md-6 left center">
+                            <div class="col-md-12 left">
+                                <p class="book orange">Generally speaking, the bottleneck of our idea or in other
+                                    words, the critical working point, was to be able to build up a complex gold
+                                    nano-particles network. In order to enable an easy optical detection. Understanding
+                                    the implications associated, makes the difference when, at the end, real design
+                                    must be faced. Keep reading if you want to know our sensor. How HLA-DQ and
+                                    gluten-derived peptides interactions could be detected? how this detection could be
+                                    easy and visual? And finally, which is the physical dynamics pervading?</p>
+
+                                <div class="row block-desc-b">
+                                    <div class="col-md-12 left">
+                                        <div class="row block-sept center">
+                                            <div class="col-md-7 button">
+                                                <a class="text-transform" href="Model.html" target="_blank"> Modelling</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <h3 class="orange-intense">2nd PCRs standardization</h3>
+                    </div>
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <p class="book orange">One of the strengths of our approach to detect patient-specific
+                                reactive gluten peptides in food is that it will only be necessary to obtain a DNA
+                                sample (saliva) from the patient. Patient’s HLA-DQ (the protein responsible of
+                                recognising and triggering the immune response) will be expressed using a PCR protocol
+                                developed in the WetLab. For this purpose, we use specific primers to amplify patient’s
+                                target genes and thus, it is necessary to evaluate if they are useful for all of the
+                                different celiac-associated genotypes.</p>
+                        </div>
+                        <div class="col-md-6 left center">
+                            <div class="col-md-12">
+                                <p class="book orange">A multiple sequence alignment (MSA) on all annotated
+                                    celiac-associated genomic sequence was performed to evaluate the specific
+                                    primer-binding regions conservation.</p>
+                                <p class="book orange">It has been demonstrated that these regions are perfectly
+                                    conserved or slightly different for both DQ2 and DQ8 celiac haplotypes separately.
+                                    This means that either the same primer can be used for amplifying all genotypes or
+                                    that a specific DQ2- or DQ8-primer has to be used.</p>
+
+                                <div class="row block-desc-b">
+                                    <div class="col-md-12 left">
+                                        <div class="row block-sept center">
+                                            <div class="col-md-8 button">
+                                                <a class="text-transform" href="Standardization.html" target="_blank">PCRs
+                                                    Standardization</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <h3 class="orange-intense">3rd Molecular recognition</h3>
+                    </div>
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <p class="book orange">Another aspect that we wanted to evaluate is how the HLA-DQ protein
+                                is able to effectively recognise and bind gluten-derived peptides. Specifically, which
+                                are the residues that are mediating this recognition and, if they are conserved among
+                                celiac haplotypes DQ2 and DQ8.</p>
+                            <p class="book orange">To do so, we focused the conservation study to those residues that
+                                have been suggested to be responsible of the peptide recognition. A multiple alignment
+                                on protein sequences was performed using all the annotated so far. </p>
+
+                        </div>
+                        <div class="col-md-6 left center">
+                            <div class="col-md-12">
+                                <p class="book orange">Three different residues, two in the &alpha; chain and one in
+                                    the &beta; chain, have been determined as conserved among celiac patients and
+                                    absent in healthy people and hence, it has been established that this mutated
+                                    residues strictly need to be present in the HLA protein in order to molecularly
+                                    recognise a gluten peptide and develop the disease.</p>
+
+                                <div class="row block-desc-b">
+                                    <div class="col-md-12 left">
+                                        <div class="row block-sept center">
+                                            <div class="col-md-7 button">
+                                                <a class="text-transform" href="Celiac_disease.html" target="_blank">Molecular
+                                                    recognition</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script>
+
+</body>
+
+</html>

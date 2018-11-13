@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+    
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Wet Lab | Notebook</h1>
+                        <a href="#first-desc" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <section class="first-desc text-center" id="first-desc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <!--                    <h2 class="section-heading orange">First steps</h2>-->
+                    <div class="col-md-auto">
+                        <h4 class="book orange block-sept comas"><i>Over the summer, the BioIQS team has compiled an account of all the work conducted. We believe it will help future iGEM generations to understand and continue our work.</i></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#cl-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h4 class="book orange">In our project, we followed 3 different experimental lines:</h4>
+                    <div class="row">
+
+                        <div class="col-md-4 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">Obtention of the HLA-DQ gene from a DNA sample of a celiac patient.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">Synthetic constructs for <i>E.coli</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">Synthetic constructs for <i>P.pastoris</i>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center block-sep">
+                        <div class="col-md-8 text-center">
+                            <p class="book orange-medium">Different members conducted each of these parts. To avoid misunderstandings, we kept track of the work done every week in three different notebooks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 center block-sept">
+                                    <i class="far fa-user-circle fab orange-medium"></i>
+                                </div>
+                                <div class="col-md-12 center">
+                                    <div class="col-md-10 button">
+                                    <a class="text-transform" href="images/journal_gene_extraction.pdf" target="_blank">Download gene extraction notebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 center block-sept">
+                                    <i class="fas fa-dna fab orange-medium"></i>
+                                </div>
+                                <div class="col-md-12 center">
+                                    <div class="col-md-10 button">
+                                    <a class="text-transform" href="images/journal_constructs_ecoli.pdf" target="_blank">Download constructs <i>E.coli</i> notebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 center block-sept">
+                                    <i class="far fa-circle fab orange-medium"></i>
+                                </div>
+                                <div class="col-md-12 center">
+                                    <div class="col-md-10 button">
+                                    <a class="text-transform" href="images/journal_pichia_pastoris.pdf" target="_blank">Download constructs <i>P.pastoris</i> notebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+</body>
+
+</html>
+
+

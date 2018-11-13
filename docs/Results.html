@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Project | Results</h1>
+                        <a href="http://2018.igem.org/Team:BioIQS-Barcelona/Results#first-steps" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+        <section class="first-steps text-center" id="first-steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Achievements of our project</h2>
+                    
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="http://2018.igem.org/Team:BioIQS-Barcelona/Results#cl-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+                  <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right fletxa-d-l">
+                            <div class="row block-sept">
+                               <div class="col-md-auto">
+                        <h1 class="book orange"><i>1.</i></h1>
+                    </div>
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">Computationally <a href="Standardization.html">demonstrated</a> that primer binding regions are perfectly conserved or slightly different for both DQ2 and DQ8 celiac haplotypes separately. This means that either the same primer can be used for amplifying all genotypes or that a specific DQ2- or DQ8-primer could be used, reducing the cost of the sensor.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                               <div class="col-md-auto">
+                        <h1 class="book orange"><i>2.</i></h1>
+                    </div>
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">Successfully <a href="Basic_Part.html">designed</a> a simple and cheap way to extract the extracellular domain of both alpha and beta chains of the HLA-DQ protein from the human genome. This would make the extraction of all the HLA-DQ variants possible with only one protocol.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                  
+                  <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right fletxa-d-l">
+                            <div class="row block-sept">
+                               <div class="col-md-auto">
+                        <h1 class="book orange"><i>3.</i></h1>
+                    </div>
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">Thoroughly designed and characterized multiple <a href="Composite_Part.html">composite parts</a> to ensure the correct expression of the human HLA-DQ receptor in a bacterial or yeast host. This would enable us to determine the best way to produce de sensor.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                               <div class="col-md-auto">
+                        <h1 class="book orange"><i>4.</i></h1>
+                    </div>
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">Correctly cloned one of the constructs into a desired expression vector and prepared it for further expression experiments. Cloning is a tedious work and not always results as one would expect so this is an important achievement!</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                  
+                   <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-6 right fletxa-d-l">
+                            <div class="row block-sept">
+                               <div class="col-md-auto">
+                        <h1 class="book orange"><i>5.</i></h1>
+                    </div>
+                                <div class="col-md-12">
+                                    <h4 class="book orange-medium">Carefully built a <a href="Model.html">theoretical model</a> to illustrate the essential detection mechanism of the sensor. Modelling has become one of the most important jobs in this project and have allowed us to better understand the role of the sensor.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	
+    <footer></footer>
+    
+    <script src="/js/wiki.js"></script>
+
+</body>
+
+</html>
+
+

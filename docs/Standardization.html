@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+   
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Dry Lab | PCR Standardization</h1>
+                        <a href="#first-steps" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <button onclick="topFunction()" id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <section class="first-steps text-center" id="first-steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">First steps</h2>
+                    <div class="col-md-auto">
+                        <h4 class="book orange block-sept comas"><i>The first step to develop our sensor is to amplify, express and effectively obtain the HLA-DQ heterodimer (chains &alpha; and &beta;) from the patient's DNA, regardless of the CD-haplotype that she/he could have (either DQ2 or DQ8).</i></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#st-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-sept" id="st-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 right center">
+
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">Based on former studies, only the exons 2 and 3 from each chain codify for the extracellular domain of the HLA-DQ that interacts with the reactive gluten epitopes. With this in mind, we designed a robust model for the extraction of the α and β-chains of the HLA-DQ from the genomic DNA of a celiac patient. A set of primers were designed to conduct 3 different PCRS (including 10 reactions) to obtain the α- and β-chains flanked with restriction sites for further cloning.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="col-md-12 mx-auto image">
+                                <img class="img-f" src="images/pcr-steps.png">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mx-auto">
+                            <div class="row justify-content-center block-sept">
+                                <div class="col-md-8">
+                                    <p class="book orange">Therefore, we designed 8 specific primers (forward and reverse) to amplify the exons 2 and 3 of each chain). The nomenclature is as follows: P1 to P4 for the α-chain and P1’ to P4’ for the β-chain.</p>
+                                </div>
+                            </div>
+
+                            <table class="table book text-b">
+                                <thead class="orange-intense">
+                                    <tr>
+                                        <th scope="col">Primer</th>
+                                        <th scope="col">Chain</th>
+                                        <th scope="col">Exon</th>
+                                        <th scope="col">Genomic Location*</th>
+                                        <th scope="col">Length (bp)**</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="orange-medium">
+                                    <tr>
+                                        <td>P1</td>
+                                        <td>A</td>
+                                        <td>2 (5’->3’)</td>
+                                        <td>4643-4664 bp</td>
+                                        <td>22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P2</td>
+                                        <td>A</td>
+                                        <td>2 (3’->5’)</td>
+                                        <td>4867-4889 bp</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P3</td>
+                                        <td>A</td>
+                                        <td>3 (5’->3’)</td>
+                                        <td>5302-5326 bp</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P4</td>
+                                        <td>A</td>
+                                        <td>3 (3’->5’)</td>
+                                        <td>5561-5583 bp</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P1'</td>
+                                        <td>B</td>
+                                        <td>2 (5’->3’)</td>
+                                        <td>2072-2097 bp</td>
+                                        <td>26</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P2'</td>
+                                        <td>B</td>
+                                        <td>2 (3’->5’)</td>
+                                        <td>2436-2456 bp</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P3'</td>
+                                        <td>B</td>
+                                        <td>3 (5’->3’)</td>
+                                        <td>5199-5226 bp</td>
+                                        <td>28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P4'</td>
+                                        <td>B</td>
+                                        <td>3 (3’->5’)</td>
+                                        <td>5504-5527 bp</td>
+                                        <td>24</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="book orange-medium n-p"><small>* All genomic locations are referred to the HLA DQA1*05:01:01:01 and DQB1*02:01:01, chain A and B respectively.</small></p>
+                            <p class="book orange-medium n-p"><small>** Complementary primer overhangs are not taken into account for the analysis.</small></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-7">
+                            <h4 class="orange">Since we started the project focusing on expressing HLA-DQ from Roger’s DNA sample, primers were designed accordingly to his HLA-DQ haplotype, which is DQ2 (HLA DQA1*05:01:01:01 and DQB1*02:01:01). Remember that, for celiac disease, the haplotype nomenclature is as follows:</h4>
+                        </div>
+                    </div>
+                    <div class="row block-desc">
+                        <div class="col-md-4">
+                            <h4 class="orange-intense">DQ2-positive</h4>
+                            <p class="orange book">(HLA-DQA1*05:01 or *05:05 <b>and</b> HLA-DQB1*02:01 or *02:02)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="orange-intense">Half DQ2-positive</h4>
+                            <p class="orange book">(HLA-DQA1*05:01 <b>or</b> 05:05 or HLA-DQB1*02:01 or 02:02)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="orange-intense">DQ8-positive</h4>
+                            <p class="orange book">(HLA-DQA1*03 <b>and</b> HLA-DQB1*03:02)</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mx-auto">
+                            <p class="book orange">In order to elucidate if the designed primers are capable of amplifying every CD-associated genotype, a multiple sequence alignment (MSA) has been performed to evaluate genetic variability at primer regions.</p>
+                            <p class="book orange">Genomic HLA-DQ sequences <a class="link" href="https://github.com/Bioiqs-iGem/HLA-DQ" target="_blank">(DQA1_gen.fasta and DQB1_gen.fasta)</a> were downloaded from IPD-IMGT/HLA (Directory hosted at the European Bioinformatics Institute) version 3.33.0. Then, the genomic sequences were curated for DQ2 and DQ8 haplotypes.</p>
+                        </div>
+                    </div>
+
+                    <table class="table book text-b">
+                        <tbody class="orange-medium">
+                            <tr>
+                                <th class="orange-intense"></th>
+                                <th class="orange-intense">Download Sequences</th>
+                                <th class="orange-intense">DQ2</th>
+                                <th class="orange-intense">DQ8</th>
+
+                            </tr>
+                            <tr>
+                                <th class="orange-intense">DQA1</th>
+                                <td>73</td>
+                                <td>14</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <th class="orange-intense">DQB1</th>
+                                <td>198</td>
+                                <td>6</td>
+                                <td>13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row block-desc">
+                        <div class="col-md-12 mx-auto">
+                            <p class="book orange">Genomic MSA surprisingly resulted on a perfect alignment for sequences sharing CD-DQ haplotypes. This means that, for primer regions, all DQ2-associated sequences match perfectly and the same happens on DQ8. Moreover, for P2, P3, P1’ and P4’, primer region alignment is perfect and so, there is no need to edit the standard primers.</p>
+                            <div class="image">
+                            <img class="img-m" src="images/gct.jpeg">
+                            </div>
+                            <p class="book orange-medium n-p smll">* Hidden Markov Model of P1 genomic primer region curated for DQ2 and DQ8 genotypes. In this case, there are only 3 differing bases among primer region. Since 14 DQ2 and 6 DQ8 sequences were aligned, dominant residues are those corresponding to DQ2 genotypes. DQ2 sequences presents C-C-T and DQ8 presents T-T-C.</p>
+                        </div>
+                    </div>
+                    
+                    <table class="table book text-b">
+                                <thead class="orange-intense">
+                                    <tr>
+                                        <th scope="col">Primer</th>
+                                        <th scope="col">Exon</th>
+                                        <th scope="col">Total seq.</th>
+                                        <th scope="col">DQ2</th>
+                                        <th scope="col">DQ8</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="orange-medium">
+                                    <tr>
+                                        <td>P1</td>
+                                        <td>2 (5’->3’)</td>
+                                        <td>21</td>
+                                        <td>GCTGACCACGTCGCCTCTTATG</td>
+                                        <td>GCTGACCATGTTGCCTCTTACG</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P2</td>
+                                        <td>2 (3’->5’)</td>
+                                        <td>21</td>
+                                        <td>CATTGGTAGCAGCGGTAGAGTTG</td>
+                                        <td>CATTGGTAGCAGCGGTAGAGTTG</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P3</td>
+                                        <td>3 (5’->3’)</td>
+                                        <td>21</td>
+                                        <td>AGGTTCCTGAGGTCACAGTGTTTTC</td>
+                                        <td>AGGTTCCTGAGGTCACAGTGTTTTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P4</td>
+                                        <td>3 (3’->5’)</td>
+                                        <td>21</td>
+                                        <td>CCCAGTGTTTCAGAAGAGGCTTG</td>
+                                        <td>CCCAGTGTTTCAGAAGAGGCTCA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P1'</td>
+                                        <td>2 (5’->3’)</td>
+                                        <td>19</td>
+                                        <td>GAGGATTTCGTGTACCAGTTTAAGGG</td>
+                                        <td>GAGGATTTCGTGTACCAGTTTAAGGG</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P2'</td>
+                                        <td>2 (3’->5’)</td>
+                                        <td>19</td>
+                                        <td>TCCTCTGGGGTGGAACAAACG</td>
+                                        <td>TCAGCCGGGGTGGAACGAACA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P3'</td>
+                                        <td>3 (5’->3’)</td>
+                                        <td>19</td>
+                                        <td>CCTATATCTTTCCCTGTCTGTTACTGCC</td>
+                                        <td>CC--TATCTTTCCCTGTCTGTTACTGCC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P4'</td>
+                                        <td>3 (3’->5’)</td>
+                                        <td>19</td>
+                                        <td>CAATATCCCCTTACGCCACTCCAC</td>
+                                        <td>CAATATCCCCTTACGCCACTCCAC</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p class="orange book">For P3’ primer, a two-base deletion is reported as <b>refSNP Cluster Report: rs756895762</b> and so this is the only primer that needs special attention to.</p>
+                        <div class="image">
+                            <img class="img-m" src="images/gtc.jpeg">
+                        </div>
+                        <p class="orange book">Here are presented the Hidden Markov Models for all primers. For &alpha; chain dominant bases corresponds to <b>DQ2</b> and for &beta; corresponds to DQ8. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> 
+
+</body>
+
+</html>
+
+

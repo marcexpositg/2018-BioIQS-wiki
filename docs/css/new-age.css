@@ -1,0 +1,1563 @@
+/*!
+ * Start Bootstrap - New Age v5.0.0 (https://startbootstrap.com/template-overviews/new-age)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ */
+
+
+ @font-face {
+    font-family: "CircularStd-Bold";
+    src: url("/fonts/circularStd-Bold.otf"); 
+}
+
+@font-face {
+    font-family: "CircularStd-Medium";
+    src: url("/fonts/circularStd-Medium.otf");
+}
+
+@font-face {
+    font-family: "CircularStd-Book";
+    src: url("/fonts/circularStd-Book.otf");
+}
+
+/*EXAMPLE BUTTON TO TOP*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*END EXAMPLE BUTTON TO TOP*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "CircularStd-Medium" !important;
+    color: #032a5e;
+}
+
+.book,
+.text-b {
+    font-family: "CircularStd-Book" !important;
+}
+
+.text-b {
+    font-size: 20px;
+    text-shadow: 1px 1px #eccd6e;
+}
+
+.text-f {
+    text-shadow: 1px 1px #d6d6d6;
+}
+
+a {
+    color: #fdcc52;
+    transition: all .35s;
+}
+
+a.a-arrow {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+a:hover,
+a:focus {
+    color: #fcbd20;
+}
+
+.fab {
+    font-size: 50px;
+}
+
+.b-link {
+    text-align: center;
+}
+
+p.n-p {
+    margin: 0;
+}
+
+.smll {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.orange {
+    color: #fdcc52;
+    text-shadow: 1px 1px #fff4d4;
+}
+
+.orange-intense {
+    color: #ff7316;
+    text-shadow: 1px 1px #ffdfa58c;
+}
+
+.b-orange-intense {
+    background-color: #ff9800;
+}
+
+.orange-medium {
+    color: #ff9800;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+}
+
+
+.image img.img-m {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.image img.img-f {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.table thead th {
+    border-bottom: 2px solid #042a5e;
+    border-top: 2px solid #042a5e;
+}
+
+.table td,
+.table th {
+    border-top: 1px solid #042a5e;
+    text-align: center;
+}
+
+.right {
+    padding-right: 2.5rem;
+}
+
+.left {
+    padding-left: 2.5rem;
+}
+
+.text-description {
+    display: flex;
+    align-items: center;
+}
+
+.block-desc {
+    padding: 4rem 0;
+}
+
+.block-desc-t {
+    padding: 4rem 0 0;
+}
+
+.block-desc-b {
+    padding: 0 0 4rem;
+}
+
+.block-desc-middle {
+    padding: 2rem 0;
+}
+
+.block-desc-middle-t {
+    padding-top: 2rem;
+}
+
+#t-project {
+    background-color: #fce5a6;
+}
+
+.dot {
+    width: 9px;
+    background-image: url("http://2018.igem.org/wiki/images/e/e7/T--BioIQS-Barcelona--2018_dots.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 1rem;
+}
+
+.lines:before {
+    content: url("http://2018.igem.org/wiki/images/f/f1/T--BioIQS-Barcelona--2018_comas.png");
+    position: absolute;
+    top: -49px;
+    left: 77px;
+    font-size: 54px;
+    color: #ff7316;
+}
+
+.lines:after {
+    content: url("http://2018.igem.org/wiki/images/f/f1/T--BioIQS-Barcelona--2018_comas.png");
+    position: absolute;
+    bottom: -33px;
+    right: 88px;
+    font-size: 54px;
+    color: #ff7316;
+}
+
+.comas:before {
+    content: '“';
+    position: absolute;
+    font-size: 60px;
+    top: -8px;
+    left: -18px;
+}
+
+.comas:after {
+    content: '”';
+    position: absolute;
+    font-size: 60px;
+    bottom: -38px;
+    right: -23px;
+}
+
+.cnt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fletxa:before {
+    content: url("http://2018.igem.org/wiki/images/6/6d/T--BioIQS-Barcelona--2018_fletxa-w.png");
+    position: absolute;
+    top: -35px;
+    left: -25px;
+}
+
+.fletxa-d:before {
+    content: url("http://2018.igem.org/wiki/images/c/cd/T--BioIQS-Barcelona--2018_fletxa-d.png");
+    position: absolute;
+    bottom: -74px;
+    left: -28px;
+}
+
+.fletxa-d-l:before {
+    content: url("http://2018.igem.org/wiki/images/c/cd/T--BioIQS-Barcelona--2018_fletxa-d.png");
+    position: absolute;
+    bottom: -107px;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    left: -64px;
+}
+
+.dots-line:before {
+    content: url("http://2018.igem.org/wiki/images/7/76/T--BioIQS-Barcelona--2018_dots-line.png");
+    position: absolute;
+    top: 23px;
+    right: -16px;
+}
+
+.vertical-lines:before {
+    content: url("http://2018.igem.org/wiki/images/b/b3/T--BioIQS-Barcelona--2018_vertical-lines.png");
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+}
+
+.prov:before {
+    content: url("http://2018.igem.org/wiki/images/2/21/T--BioIQS-Barcelona--2018_proveta.png");
+    position: absolute;
+    bottom: 0;
+    right: -55px;
+}
+
+.relative {
+    position: relative;
+}
+
+.microscopi:before {
+    content: url("http://2018.igem.org/wiki/images/4/4a/T--BioIQS-Barcelona--2018_microscopio.png");
+    position: absolute;
+    top: -120px;
+    right: 172px;
+}
+
+.apart,
+.sub-card {
+    font-family: 'Permanent Marker', cursive !important;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color: #fff;
+}
+
+apart {
+    text-shadow: 1px 1px #fdd869;
+    padding-top: 3rem;
+}
+
+h4.sub-card {
+    font-size: 50px;
+    text-shadow: 2px 2px #cad1ef82;
+    padding-bottom: 2rem;
+}
+
+.bg-light-st {
+    background-color: #fff0c3;
+}
+
+.big {
+    font-size: 50px;
+    padding-top: 0;
+}
+
+.yellow:after {
+    content: url("http://2018.igem.org/wiki/images/2/2e/T--BioIQS-Barcelona--2018_ralla.png");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img {
+    display: flex;
+    width: 98px;
+}
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    width: 154px;
+}
+
+.end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-symp {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.list-symp li {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    padding: .2rem;
+}
+
+/*DROPDOWN MENU STYLE*/
+
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-item {
+    padding: .25rem .5rem;
+}
+
+#mainNav {
+    font-family: "CircularStd-Bold";
+}
+
+.bold {
+    font-family: "CircularStd-Bold";
+}
+
+/*END DROPDOWN MENU STYLE*/
+
+/*TEAM MEMBERS*/
+
+#team {
+    /*    background: #fafafa !important;*/
+    background-color: #efefef73 !important;
+}
+
+#wiki-card-flip {
+    background-color: #fff0c366 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 90px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card,
+#wiki-card-flip .card {
+    border: none;
+    background-color: #032A5D;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+    /*
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+*/
+    border-radius: .25rem;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    box-shadow: 4px 6px 16px -6px rgba(4, 42, 94, 0.49);
+}
+
+#wiki-card-flip .frontside,
+#wiki-card-flip .backside {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    box-shadow: 4px 6px 16px -6px rgba(255, 227, 143, 0.84)
+}
+
+#wiki-card-flip .backside .card a {
+    color: #ff9800 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid #fdcc52;
+}
+
+.backside .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+a.back-card-link {
+    text-decoration: none;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #ff7316 !important;
+}
+
+.frontside .card .card-body img {
+    width: 345px;
+    border-radius: 50%;
+}
+
+.card-img-top {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+/*
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+*/
+}
+
+.card-img-top-modelling {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.content-img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0 20px;
+}
+
+.roger:before,
+.julia:before,
+.victor:before,
+.marc:before,
+.mireia:before,
+.xavi:before,
+.jordi:before,
+.edu:before,
+.coral:before,
+.jorda:before,
+.marta:before {
+    content: "";
+    position: absolute;
+    top: -31px;
+    right: -24px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+}
+
+.roger:before {
+    background-image: url("http://2018.igem.org/wiki/images/a/a0/T--BioIQS-Barcelona--2018_ramen.png");
+}
+
+.julia:before {
+    background-image: url("http://2018.igem.org/wiki/images/3/3c/T--BioIQS-Barcelona--2018_bocata.png");
+}
+
+.victor:before {
+    background-image: url("http://2018.igem.org/wiki/images/4/40/T--BioIQS-Barcelona--2018_croissant.png");
+}
+
+.marc:before {
+    background-image: url("http://2018.igem.org/wiki/images/7/74/T--BioIQS-Barcelona--2018_bimbo.png");
+}
+
+.mireia:before {
+    background-image: url("http://2018.igem.org/wiki/images/b/b9/T--BioIQS-Barcelona--2018_cupcake.png");
+}
+
+.xavi:before {
+    background-image: url("http://2018.igem.org/wiki/images/c/c7/T--BioIQS-Barcelona--2018_noodles.png");
+}
+
+.jordi:before {
+    background-image: url("http://2018.igem.org/wiki/images/2/2b/T--BioIQS-Barcelona--2018_cookies.png");
+}
+
+.edu:before {
+    background-image: url("http://2018.igem.org/wiki/images/c/ca/T--BioIQS-Barcelona--2018_pizza.png");
+}
+
+.coral:before {
+    background-image: url("http://2018.igem.org/wiki/images/f/f2/T--BioIQS-Barcelona--2018_pasta.png");
+}
+
+.jorda:before {
+    background-image: url("http://2018.igem.org/wiki/images/4/4a/T--BioIQS-Barcelona--2018_donut.png");
+}
+
+.marta:before {
+    background-image: url("http://2018.igem.org/wiki/images/f/f9/T--BioIQS-Barcelona--2018_cake.png");
+}
+
+/*END TEAM MEMBERS CODE*/
+
+/* Wiki cards code */
+
+.one:before,
+.two:before,
+.three:before,
+.four:before,
+.five:before,
+.six:before,
+.seven:before,
+.eight:before,
+.nine:before,
+.ten:before,
+.eleven:before,
+.twelve:before {
+    content: "";
+    position: absolute;
+    top: -31px;
+    right: -24px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+}
+
+.one:before {
+    background-image: url("http://2018.igem.org/wiki/images/5/5c/T--BioIQS-Barcelona--2018_one.png");
+}
+
+.two:before {
+    background-image: url("http://2018.igem.org/wiki/images/a/a7/T--BioIQS-Barcelona--2018_two.png");
+}
+
+.three:before {
+    background-image: url("http://2018.igem.org/wiki/images/0/02/T--BioIQS-Barcelona--2018_three.png");
+}
+
+.four:before {
+    background-image: url("http://2018.igem.org/wiki/images/8/8d/T--BioIQS-Barcelona--2018_four.png");
+}
+
+.five:before {
+    background-image: url("http://2018.igem.org/wiki/images/5/51/T--BioIQS-Barcelona--2018_five.png");
+}
+
+.six:before {
+    background-image: url("http://2018.igem.org/wiki/images/3/30/T--BioIQS-Barcelona--2018_six.png");
+}
+
+.seven:before {
+    background-image: url("http://2018.igem.org/wiki/images/b/b6/T--BioIQS-Barcelona--2018_seven.png");
+}
+
+.eight:before {
+    background-image: url("http://2018.igem.org/wiki/images/4/43/T--BioIQS-Barcelona--2018_eight.png");
+}
+
+.nine:before {
+    background-image: url("http://2018.igem.org/wiki/images/8/8c/T--BioIQS-Barcelona--2018_nine.png");
+}
+
+.ten:before {
+    background-image: url("http://2018.igem.org/wiki/images/3/34/T--BioIQS-Barcelona--2018_ten.png");
+}
+
+.eleven:before {
+    background-image: url("http://2018.igem.org/wiki/images/6/65/T--BioIQS-Barcelona--2018_eleven.png");
+}
+
+.twelve:before {
+    background-image: url("http://2018.igem.org/wiki/images/d/d9/T--BioIQS-Barcelona--2018_twelve.png");
+}
+
+/* End Wiki cards code */
+
+/*Trying blinking*/
+
+.blinking {
+    -webkit-animation: blinkingText 1.2s infinite;
+            animation: blinkingText 1.2s infinite;
+}
+
+@-webkit-keyframes blinkingText {
+    0% {
+        color: #fff;
+    }
+    49% {
+        color: #fff;
+    }
+    50% {
+        color: #ffdb16;
+    }
+    99% {
+        color: #ffbb16;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #fff;
+    }
+    49% {
+        color: #fff;
+    }
+    50% {
+        color: #ffdb16;
+    }
+    99% {
+        color: #ffbb16;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+/*End code blinking*/
+
+/*Code for accordion team members*/
+
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.memb-desc {
+    padding-left: 50px;
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 2px solid rgb(245, 229, 178);
+}
+
+.title-accordion {
+    display: flex;
+    justify-content: space-between;
+    font-family: "CircularStd-Book" !important;
+    font-size: 1.4rem;
+}
+
+.card-header a {
+    text-decoration: none;
+}
+
+.accordion .card-body {
+    padding: 1.25rem 1.25rem 0;
+}
+
+.accordion .card-body p {
+    margin-bottom: 0;
+}
+
+/* Accordion wiki content */
+
+.accordion .card-body.wiki-cont p {
+    padding: 1.2rem;
+    line-height: 1.6;
+}
+
+.accordion .card-body.wiki-cont a,
+.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border-bottom: 3px solid orange;
+}
+
+.link-l {
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border-bottom: 3px solid orange;
+}
+
+/* End accordion wiki content */
+
+.accordion .image img {
+    border-radius: 50%;
+}
+
+.accordion .image img.img-m {
+    border-radius: 0;
+}
+
+.social-ic {
+    padding: 1.25rem 0 0;
+}
+
+.social-ic ul {
+    margin: 0;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+    color: rgb(247, 148, 106);
+}
+
+.social-ic .list-inline {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image.pers {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*End code for accordion team members*/
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "CircularStd-Medium" !important;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    line-height: 1.4;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.heights {
+    min-height: 90px;
+    max-height: 90px;
+}
+
+span.arrow {
+    position: absolute;
+    bottom: 0px;
+    width: 6vmin;
+    height: 6vmin;
+    background: transparent;
+    border-top: 2vmin solid #fdcc52;
+    border-right: 2vmin solid #fdcc52;
+    box-shadow: 0 0 0 #e2c1a4;
+    transition: all 200ms ease;
+}
+
+.down {
+    -webkit-transform: translate3d(0, -50%, 0) rotate(135deg);
+            transform: translate3d(0, -50%, 0) rotate(135deg);
+}
+
+.arrow:hover {
+    border-color: #fdae52;
+    box-shadow: 0.5vmin -0.5vmin 0 #fdcc52;
+}
+
+.arrow:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-40%, -60%) rotate(135deg);
+            transform: translate(-40%, -60%) rotate(135deg);
+
+    width: 200%;
+    height: 200%;
+}
+
+section {
+    padding: 90px 0;
+
+}
+
+section#team {
+    margin: 0px;
+}
+
+section#cl-description,
+section#protocols {
+    background-color: #fff0c366 !important;
+}
+
+section h2 {
+    font-size: 50px;
+}
+
+.cta {
+    padding-top: 4rem;
+}
+
+.button {
+    border: 4px solid #f59d62;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #f59d62;
+}
+
+.button a:hover {
+    color: #fdcc52;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.text-transform {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.card {
+    width: 20rem;
+    height: 560px;
+    border: none;
+}
+
+.card-member {
+    width: 100%;
+}
+
+.frontside .card {
+    background-color: #fff !important;
+}
+
+.backside .card {
+    background-color: #042a5e !important;
+}
+
+/* Edit wiki code card */
+
+.backside .card.wiki-card {
+    background-color: #fff !important;
+}
+
+.backside .card.wiki-card .card-text {
+    color: #fdcc52;
+    text-shadow: 1px 1px #fff4d4;
+    font-size: 18px;
+}
+
+/* End edit wiki code card */
+
+.backside .card-text {
+    color: #fff;
+}
+
+
+.frontside .card-text p {
+    margin-bottom: 0;
+}
+
+#t-objectives {
+    background-color: #fce5a6;
+}
+
+.card-body {
+    padding: 0 1.25rem;
+}
+
+.card-body p {
+    font-family: "CircularStd-Book";
+}
+
+.text-description {
+    display: block;
+    align-items: center;
+}
+
+#mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: white;
+    transition: all .35s;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+    color: #fdcc52;
+    font-family: "CircularStd-Bold";
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+    color: #fcbd20;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: #222222;
+}
+
+#mainNav .navbar-nav > li > a {
+    font-size: 14px;
+    font-family: "CircularStd-Bold";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#mainNav .navbar-nav > li > a.active {
+    color: #fdcc52 !important;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a.active:hover {
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+    color: #222222;
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+    color: #fdcc52;
+}
+
+@media (min-width: 768px) {
+    .cnt {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .separation {
+        padding-top: 2.5rem;
+    }
+
+    .block-sept {
+        padding: 1.2rem 0;
+    }
+    .block-sept-b {
+        padding-bottom: 2.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+
+    section#understanding,
+    section#first-steps,
+    section#default,
+    section#wiki-descriptions,
+    section#collaborate,
+    section#interlab,
+    section#modelling,
+    section#protocols,
+    section#marjan-de-mey,
+    section#celiac-disease,
+    section#hs-st-deu,
+    section#face-to-face,
+    section#nima-sensor,
+    section#bioethics,
+    section#first-desc-wiki {
+        padding: 60px 0;
+    }
+    
+    section#one {
+        padding: 60px 0 30px;
+    }
+    section#two,
+    section#three,
+    section#four {
+        padding: 30px 0;
+    }
+    
+    .position-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+
+
+    #mainNav {
+        border-color: transparent;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+        color: fade(white, 70%);
+    }
+    #mainNav .navbar-brand:hover,
+    #mainNav .navbar-brand:focus {
+        color: white;
+    }
+    #mainNav .navbar-nav > li > a,
+    #mainNav .navbar-nav > li > a:focus {
+        color: #fff;
+    }
+    #mainNav .navbar-nav > li > a:hover,
+    #mainNav .navbar-nav > li > a:focus:hover {
+        color: white;
+    }
+    #mainNav.navbar-shrink {
+        border-color: rgba(34, 34, 34, 0.1);
+        background-color: white;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #222222;
+    }
+    #mainNav.navbar-shrink .navbar-brand:hover,
+    #mainNav.navbar-shrink .navbar-brand:focus {
+        color: #fdcc52;
+    }
+    #mainNav.navbar-shrink .navbar-nav > li > a,
+    #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+        color: #032A5E;
+    }
+    #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+    #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+        color: #fdcc52;
+    }
+}
+
+header.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: #fdd884;
+    background: linear-gradient(to left, #fdd884, #ef8e4e);
+    /*    background: url(..//images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
+    background-repeat: no-repeat;
+}
+
+header.masthead.teams {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: #fdd884;
+    background: linear-gradient(to left, #aeddff, #032A5D);
+    /*    background: url(..//images/patt.png), linear-gradient(to left, #fdd884, #ef8e4e);*/
+    background-repeat: no-repeat;
+}
+
+header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+header.masthead .header-content.header-xl {
+    max-width: 542px;
+}
+
+header.masthead .header-content.header-xxl {
+    max-width: 670px;
+}
+
+header.masthead .header-content h1 {
+    font-size: 30px;
+}
+
+header.masthead .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header.masthead .device-container .screen img {
+    border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 775px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header.masthead.little {
+        height: 50vh;
+        min-height: 400px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header.masthead.teams {
+        height: 50vh;
+        min-height: 497px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    header.masthead .header-content {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    header.masthead .header-content h1 {
+        font-size: 50px;
+    }
+    header.masthead .device-container {
+        max-width: 325px;
+    }
+}
+
+section.download {
+    position: relative;
+    padding: 150px 0;
+}
+
+section.download h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+section.download .badges .badge-link {
+    display: block;
+    margin-bottom: 25px;
+}
+
+section.download .badges .badge-link:last-child {
+    margin-bottom: 0;
+}
+
+section.download .badges .badge-link img {
+    height: 60px;
+}
+
+@media (min-width: 768px) {
+    section.download .badges .badge-link {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    section.download h2 {
+        font-size: 70px;
+    }
+}
+
+section.features .section-heading {
+    margin-bottom: 100px;
+}
+
+section.features .section-heading h2 {
+    margin-top: 0;
+}
+
+section.features .section-heading p {
+    margin-bottom: 0;
+}
+
+section.features .device-container,
+section.features .feature-item {
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+section.features .device-container {
+    margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+    section.features .device-container {
+        margin-bottom: 0;
+    }
+}
+
+section.features .feature-item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+section.features .feature-item h3 {
+    font-size: 30px;
+}
+
+section.features .feature-item i {
+    font-size: 80px;
+    display: block;
+    margin-bottom: 15px;
+    background: linear-gradient(to left, #7b4397, #dc2430);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section.cta {
+    position: relative;
+    padding: 250px 0;
+    background-image: url("http://2018.igem.org/wiki/images/3/3f/T--BioIQS-Barcelona--fisio-pat.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+section.cta .cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+section.cta .cta-content h2 {
+    font-size: 50px;
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.fa-2x {
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+    section.cta .cta-content h2 {
+        font-size: 80px;
+    }
+}
+
+section.cta .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.contact {
+    text-align: center;
+}
+
+section.contact h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+section.contact h2 i {
+    color: #dd4b39;
+}
+
+section.contact ul.list-social {
+    margin-bottom: 0;
+}
+
+section.contact ul.list-social li a {
+    font-size: 40px;
+    line-height: 80px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    color: white;
+    border-radius: 100%;
+}
+
+section.contact ul.list-social li.social-twitter a {
+    background-color: #1da1f2;
+}
+
+section.contact ul.list-social li.social-twitter a:hover {
+    background-color: #0d95e8;
+}
+
+section.contact ul.list-social li.social-facebook a {
+    background-color: #3b5998;
+}
+
+section.contact ul.list-social li.social-facebook a:hover {
+    background-color: #344e86;
+}
+
+section.contact ul.list-social li.social-google-plus a {
+    background-color: #dd4b39;
+}
+
+section.contact ul.list-social li.social-google-plus a:hover {
+    background-color: #d73925;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    color: #0b3063;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer ul li a {
+    font-size: 12px;
+    color: #0b3063;
+}
+
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active {
+    text-decoration: none;
+}
+
+.bg-primary {
+    background: #FF7317;
+    background: linear-gradient(#FF7317, #d2a644);
+}
+
+.text-primary {
+    color: #fdcc52;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid;
+    border-color: white;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    color: white;
+    border-color: #fdcc52;
+    background-color: #fdcc52;
+}
+
+.btn {
+    border-radius: 0;
+    font-family: 'CircularStd-Bold', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+}
+
+.btn-xl {
+    font-size: 11px;
+    padding: 15px 45px;
+}
+
+
+.scrollUp{
+    -webkit-transform: translateY(-56px);
+            transform: translateY(-56px);
+}
+
+
+p a:hover, h4 a:hover {
+    color: black
+}
+
+
+.dropdown-item.below-header {
+    
+    background-color: #f8f9fa9f;
+/*    background-color: rgb(248, 189, 113); */
+}
+
+.dropdown-item.below-header:hover {
+    color: rgb(239, 142, 78);
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+#meet-us-team:hover{
+    color: white; /*si vull canviar color lletres meet us pagina team*/
+    border-color: #7aaae9;
+    background-color: #7aaae9;
+}

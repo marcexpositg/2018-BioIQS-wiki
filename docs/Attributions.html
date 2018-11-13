@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="/dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+   
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-9 my-auto">
+                    <div class="header-content header-xxl">
+                        <h1 class="mb-5">Team | Attributions</h1>
+                        <a href="#cl-description" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">     
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-4 order-md-1 right"> <!-- Order-md-1 es que va la esquerra. md-2 a la dreta (el numero mes baix mes a l'esquerra) -->
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Roger Compte</h3>
+                                    <div class="image pers">
+                                        <img src="images/roger.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 order-md-2 left center"> <!-- Order-md-2 vol dir que va a la dreta pq l'altre és 1 -->
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Roger developed the fundamental idea which this project is about, and consequently assessed the background and goals about the topic. Then, his biggest labor on the Drylab focused on the HLA-DQ sequences extraction design: primers and PCR design. Afterwards, he performed the genomic DNA extraction and designed the PCR program to amplify it and reaching the basic parts. He also worked on the setting of constructs and methodologies to achieve a proper functional folded protein. He also helped in social events and project promotion.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-4 order-md-2 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Júlia Quintanas</h3>
+                                    <div class="image pers">
+                                        <img src="images/julia.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-1 right center">
+                                <div class="row block-sept">
+                                    <div class="col-md-12 ">
+                                        <p class="book orange">Júlia managed different tasks of the project promotion. She contacted with experts and other stakeholders in order to improve the project in terms of science-communication and ethics. She also worked in the launching of the team presentation video and the dissemination of the crowdfunding platform. Furthermore, she has participated in the organization and realization of different divulgation activities to raise awareness of celiac disease and its consequences. Regarding WetLab’'s part, she worked on the setting up of the PCR strategy to isolate the HLA genes from genomics DNA. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Victor Maull</h3>
+                                    <div class="image pers">
+                                        <img src="images/victor.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-2 left center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Victor had been working on the design of the sensor with Coral from a theoretical point of view. Moreover, he developed strong theoretical background to understand and predict the detection dynamics underlying the sensor. Consequently, the exploration through mathematical models and computer simulations has been achieved. Furthermore, he lent a hand here and there, holistically speaking.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-4 order-md-2 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Marc Expòsit</h3>
+                                    <div class="image pers">
+                                        <img src="images/marc.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8 order-md-1 right center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Marc learned web development from scratch and created the wiki editing tutorial examples and videos. He presented the project in multiple events together with other team members. Marc loves science communication and programming, so he designed and carried out the DNA information storage workshop. In the WetLab, he performed the experiments to clone the basic parts in the pSB1C3 vector to register them as BioBricks. He also worked in editing the wiki and did his best to coordinate the team and the progress of the project. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Mireia Solà</h3>
+                                    <div class="image pers">
+                                        <img src="images/mireia-s.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-2 left center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Mireia collaborated in the marketing team during the initial stages of the iGEM competition, specially managing the social networks and looking for possible sponsors. When executing the strategy in the laboratory, Miss Solà helped performing the experiments as well as controlling the orders of the material and reactives necessary for all tasks. Finally, as other team members, she helped designing the poster for the Giant Jamboree. Without her, our Instagram wouldn't have been the same!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                            <div class="col-md-4 order-md-2 left">
+                                    <div class="row block-sept">
+                                        <div class="col-md-12 accordion">
+                                            <h3 class="orange-medium block-sept-b">Xavi Carol</h3>
+                                            <div class="image pers">
+                                                <img src="images/xavi.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="col-md-8 order-md-1 right center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Xavi actively participated in different parts of the project. During the first stages, he was in charge of the crowdfunding campaign together with Julia and Coral. Besides, he established the scientific basis of the project. He was responsible for building bridges among the different members of the group as well as with the IQS University. On the other hand, he focused on the design of the gene extraction strategy, working hand in hand with Roger. He also was in charge to establish a potential collaboration with the UPF iGEM team, to assess whether the extraction strategy that they formerly designed was robust or not. He was essential for the design and launch of the wiki. Finally, he prepared several speeches in Bars and restaurants to clear up misunderstandings related to celiac disease, as well as the final presentation for the Giant Jamboree.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Jordi Chi</h3>
+                                    <div class="image pers">
+                                        <img src="images/jordi.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-2 left center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Jordi was actively involved in the experimental aspect of the project, from PCR primer and synthetic construct design to successfully clone the one of the most promising constructs for our project purpose into the desired vector. He also performed the expression experiments of the cloned construct as well as most of the experimental work from the InterLab Study.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                            <div class="col-md-4 order-md-2 left">
+                                    <div class="row block-sept">
+                                        <div class="col-md-12 accordion">
+                                            <h3 class="orange-medium block-sept-b">Eduard Martinez</h3>
+                                            <div class="image pers">
+                                                <img src="images/edu.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="col-md-8 order-md-1 right center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Eduard Martinez had been in charge of designing the majority of experimental part of P. pastoris strain. Starting for primer design, choosing the expressions vectors, protocols and the expression methodology. He performed a computational analysis of post traduccionals modifications, disulphide bounds and fold HLA (α,ß) pattern. Furthermore, he performed all the experimental part that involves P. pastoris and helped in others experimental parts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Coral García</h3>
+                                    <div class="image pers">
+                                        <img src="images/coral.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-2 left center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Coral designed the gold nanoparticles based sensor, attending Victor occasionally with the development of the drylab modelling. She was also involved in the WetLab during the isolation of HLA from genomic DNA. She managed the crowdfunding web page and collaborated with Xavi and Júlia in different marketing tasks.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+
+                        <div class="col-md-4 order-md-2 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Mireia Jordà</h3>
+                                    <div class="image pers">
+                                        <img src="images/mireia-j.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8 order-md-1 right center">
+                                <div class="row block-sept">
+                                    <div class="col-md-12 ">
+                                        <p class="book orange">Mireia Jordà was involved most of the time in isolating HLA from the genomic DNA and helped in other experimental lab tasks. She developed the scheduling for most of the divulgative events and their assistance, as well as their advertisement. She also participated in artwork, including the design of the poster and the banner and helped in the organization of social networks. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Aitor Vega</h3>
+                                    <div class="image pers">
+                                        <img src="images/aitor.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-2 left center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Aitor worked in the DryLab to assess the reproducibility of the PCR for all the celiac-associated alleles and to characterize the molecular interactions of the HLA-DQ-gliadin complex. He also occasionally helped in WetLab tasks and documenting and collecting information about the celiac disease. As other team members, he lent a hand during the last stages of Wiki implementation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                            <div class="col-md-4 order-md-2 left">
+                                    <div class="row block-sept">
+                                        <div class="col-md-12 accordion">
+                                            <h3 class="orange-medium block-sept-b">Marta Clariana</h3>
+                                            <div class="image pers">
+                                                <img src="images/marta.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        <div class="col-md-8 order-md-1 right center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Marta contributed actively spreading the fundraising by different channels, promoting the project to as many people as possible with the help of the crowdfunding platform to make our project visible to the public. She also collaborated in some aspects related to marketing, such as instagram, scientific divulgation, divulgation of celiac disease in bars and the DNA workshop.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12 accordion">
+                                    <h3 class="orange-medium block-sept-b">Tatiana Carol</h3>
+                                    <div class="image pers">
+                                        <img src="images/tatiana.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-2 left center">
+                            <div class="row block-sept">
+                                <div class="col-md-12 ">
+                                    <p class="book orange">Tatiana was our web developer. She conducted all the tasks related to the design of the wiki. She is such a great artist. Besides, she invested much of her time to give us tips to boost our communication skills. Working hand in hand with her was priceless; thanks to her, we took our programming skills to a whole new level.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -->
+    <section class="st-description block-sept">
+
+        <div class="container">
+        <div class="col-md-12 mx-auto">
+            <div class="row">
+
+                <div>
+                    <h3 class="orange-intense">Project attributions</h3>
+                </div>
+
+                <div>
+                    <p class="orange book">We would like to give our special thanks to all those who have contributed to be able the execution of this project in all areas. And the thanks go to:
+                    </p>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10" style="font-size: 20px">
+                            <ul>
+                                <li class="orange py-2"> PhD. Magda Faijes and PhD. Toni Planas. Believed in us and provided advice on our wetlab design (expression systems and protocols).
+                                </li>
+                                <li class="orange py-2">PhD. Xevi Biarnés. Assisted the team with the sequence treatment and multiple alignments (PCR standardization). </li>
+                                <li class="orange py-2">Noelia León. Created the awesome presentation video for the website and crowdfunding, furthermore designed the icons. Also helped us with marketing stuff.
+                                </li>
+                                <li class="orange py-2">Álvaro Platón. Created the amazing artwork for Giant Jamboree (banner).</li>
+                                <li class="orange py-2">Members of the <a href="http://2018.igem.org/Team:UPF_CRG_Barcelona" target="_blank">UPF_CRG_Barcelona iGEM team</a>. They ran our PCR protocols to corroborate its interlab eficacy.</li>
+                                <li class="orange py-2">PhD. Marjan De Mey. Provided advice about being in iGEM competition.</li>
+                                <li class="orange py-2">PhD. Carme Ferré. Provided more knowledge about celiac disease.</li>
+                                <li class="orange py-2">Marc Espina Cortes. His help in all communications tasks (wiki content and presentation for the Giant Jamboree) was indispensable.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="st-description block-sept">
+
+            <div class="container">
+                
+            <div class="col-md-12 mx-auto">
+                <div class="row">
+    
+                    <div>
+                        <h3 class="orange-intense">Project funders</h3>
+                    </div>
+    
+                    <div>
+                        <p class="orange book">We would also like to express our grattiude to all those who have contributed in our <a href="https://www.goteo.org/project/la-celiquia-una-enfermedad-desconocida" target="_blank">crowdfunding campaign</a>.
+                        </p>
+                    </div>
+    
+                    
+                    <div>
+                            <p class="orange book">And specifically, to our gold sponsors:</p>
+                        </div>
+                    <div class="col-md-12">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10" style="font-size: 20px">
+                                <ul>
+                                    <li class="orange py-2"><a href="https://www.iqs.edu/">Institut Químic de Sarrià (Universitat Ramon Llull)</a>
+                                    </li>
+                                    <li class="orange py-2"><a href="http://www.aiqs.es/aiqspublic/">AIQS (Alumni de l'Institut Químic de Sarrià)</a></li>
+                                    <li class="orange py-2"><a href="http://www.biokit.com/">Biokit</a></li>
+                                    <li class="orange py-2"><a href="http://www.guivesgirona.com/">Guives</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </section>
+
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> 
+
+</body>
+
+</html>
+
+

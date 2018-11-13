@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+    
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content header-xl">
+                        <h1 class="mb-5">Wet Lab | Personalization (PCRs)</h1>
+                        <a href="#pcr-person" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="project text-center" id="pcr-person">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Personalization (PCRs)</h2>
+                    <div class="col-md-12">
+                        <div class="row justify-content-center block-desc-b">
+
+                            <div class="col-md-8">
+                                <p class="book orange"><i>If you ever considered isolating your HLA-DQ genes from your genomic DNA, here is how.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mx-auto block-sept">
+                        <a class="js-scroll-trigger" href="#cl-description"><span class="arrow down"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row block-desc-b">
+                        <div class="col-md-5">
+                            <h3 class="orange-intense">The strategy</h3>
+                            <p class="book orange">One of the objectives of our project is to obtain the HLA-DQ protein from scratch. Based on former studies, only the <b>exons 2 and 3 form each chain (&alpha; and &beta;)</b> codify for the extracellular domain of the HLA-DQ that <b>interacts with gluten epitopes.</b></p>
+                            <p class="book orange">With this in mind, we designed a robust model for the extraction of the &alpha; and &beta; chains of the HLA-DQ from the genomic DNA of a celiac patient. <b>A set of primers were designed to conduct 3 different PCRS (including 10 reactions)</b> to obtain the &alpha; and &beta; chains flanked with restriction sites for further cloning.</p>
+
+                        </div>
+                        <div class="col-md-7 left center">
+                            <div class="col-md-12 mx-auto image">
+                                <img class="img-f" src="images/aa_estrategia.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6 right block-desc-t">
+                            <h3 class="orange-intense">PCR 1</h3>
+                            <p class="book orange">In the PCR1, amplification of the exons 2 and 3 is carried out by using primers P1-P2/P1’-P2’ and P3-P4/P3’-P4’ respectively in <b>4 separated reactions, called PCR_E2A/PCR_E2B and PCR_E3A/PCR_E3B</b>. The product size correspond to the ones expected, <b>253bp</b> and <b>281bp</b> for the exons that codify for the &alpha; chain, and <b>391-328bp</b> for the exons that codify for the &beta; chain.
+                        </div>
+                        <div class="col-md-6 left block-desc-t">
+                            <div class="col-md-12 mx-auto image">
+                                <img src="images/pcr1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <h3 class="orange-intense">PCR 2</h3>
+                            <p class="book orange">The products of the beforementioned reactions are to be the template of the following PCR2. In this step, the restriction sites NdeI at 5' (in the case of exon 2) and SalI at 3' (for exon 3) are introduced for <b>further cloning in the vector pET22b(+)</b>. Besides, a complementary region between exon 2 (3' end) and 3 (5' end) for further assembling is also introduced. To accomplish this, 4 separated reactions called PCR_HE2A/PCR_HE2B and PCR_HE3A/PCR_HE3B are carried out using primers P1*-P2*/P1’-P2’ and P3*-P4*/P3’-P4’ respectively. The resulting products with the restriction sites and overhangs should be of <b>264</b> and <b>292 bp</b> for the &alpha; chain and <b>289</b> and <b>298 bp</b> for the &beta; chain.
+                        </div>
+                        <div class="col-md-6 left center">
+                            <div class="col-md-12 mx-auto image">
+                                <img src="images/pcr2.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <h3 class="orange-intense">PCR 3</h3>
+                            <p class="book orange">Finally, in the PCR3, assembling of the exons 2 and 3 is done in one single reaction (Final PCR&alpha;/Final PCR&beta;), <b>using a mix of the products from PCR_HE2A and PCR_HE3A</b> (to obtain the &alpha; chain) and <b>PCR_HE2B and PCR_H3B</b> (to obtain the &beta; chain) and the flanking primers P1*-P4*/ P1’-P4’. The expected product size are <b>533 bp</b> (for the &alpha; chain) and <b>566 bp</b> for the &beta; chain).
+                        </div>
+                        <div class="col-md-6 left">
+                            <div class="col-md-12 mx-auto image">
+                                <img class="img-f" src="images/pcr3def.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="project text-center" id="pcr-person">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Collaborations</h2>
+                    <div class="col-md-12">
+                        <div class="row justify-content-center block-desc-b">
+
+                            <div class="col-md-8">
+                                <p class="book orange"><i>We considered testing the HLA gene extraction protocol that we designed during this summer using a different DNA sample.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mx-auto block-sept">
+                        <a class="js-scroll-trigger" href="#collab-description"><span class="arrow down"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="st-description block-desc" id="collab-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row block-desc-b">
+                        <div class="col-md-5">
+                            <h3 class="orange-intense">UPF CRG Barcelona Results</h3>
+                            <p class="book orange">The UPF iGEM conducted 3 PCRs for the obtention of the &beta; chain of the HLA-DQ. They used a different DNA sample for demonstrating that the designed protocol was robust. We provided them with all the reagents necessaries to do it, including primers and the iPRoof HF. The primers designed efficiently hybridized with the exons 2 and 3 of the &beta; chain.</p>
+                            <p class="book orange">The resulting product flanked with the restriction sites is ready to be cloned in a pET22b vector!</p>
+                            <p class="book orange">Congratulations UPF CRG Barcelona! </p>
+
+                        </div>
+                        <div class="col-md-7 center">
+                            <div class="col-md-12 mx-auto image">
+                                <img class="img-f" src="images/pcr_collaboration.png">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="orange">Note that P1,P2,P3,P4,P1*,P2*,P3* and P4* refer to the primers used to obtain the &alpha; chain, whereas P1',P2',P3’,P4’,P1’,P2’,P3’* and P4’* were used to obtain the &beta; chain.</p>
+                    <div class="col-md-4 button">
+                        <a class="text-transform" href="images/primer_list.pdf" target="_blank">View &amp; download PDF <i class="fas fa-file-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+
+</body>
+
+</html>
+
+

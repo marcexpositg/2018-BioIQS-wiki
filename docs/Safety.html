@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+//        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+    
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Project | Safety</h1>
+                        <a href="#first-steps" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="first-steps text-center" id="first-steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Safety Overview</h2>
+                    <div class="col-md-auto">
+                        <h4 class="book orange block-sept comas"><i>Safety is a very important aspect to take into account in synthetic biology. As members of iGEM 2018, we must comply with a set of safety requirements prior, during and after entering the laboratory.</i></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#st-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-sept" id="st-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 right">
+
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <p class="book orange">Synthetic biology is defined as the synthesis of biomolecules or engineering of biological systems with new functions that cannot be found in nature. This science searches for the creation of new ‘programmable’ organisms that behave like small computers. However, this kind of biological engineering requires levels of precaution, therefore the safety and ethical aspects of synthetic biology must be guaranteed. For this reason, it is of vital importance to strictly follow the safety regulations in a project that involve microorganisms and use harmful biological material. In addition, we are a team that perform his experimental part in the university, having this set of regulations ensures the well-being of the team, teachers, students and bar/cleaning staff.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left center">
+                            <div class="col-md-12 mx-auto image">
+                                <img class="img-f" src="images/safety.png">
+                                <!-- foto canviada -->
+                            </div>
+
+                        </div>
+                        <p class="orange-intense">Standard laboratory practices</p>
+                    </div>
+
+                </div>
+                <p class="orange book">As mentioned above, the laboratory of the BioIQS team is in the university and a whole set of basic aspects of daily work must be considered:</p>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <ul>
+                            <li class="orange"> Before and after starting work, team members should clean their hands to avoid cross-contamination of microorganisms and dispose of potentially hazardous materials.
+                            </li>
+                            <li class="orange">The use of gloves, coat, goggles and face masks (when working with volatile substances that could potentially be harmful by inhalation) is totally obligatory. Also, of the use of closed shoes and long pants to avoid direct burns on the skin by pouring acids, bases or other corrosive substances.</li>
+                            <li class="orange">It is important to use gloves and perform a washing protocol to decontaminate them before use the laminar flow hood, where the level of sterility reaches grade 3:
+                                <ul>
+                                    <li class="orange">5 minutes with UV light exposure</li>
+                                    <li class="orange">Wash with Ethanol 75%</li>
+                                    <li class="orange">5 minutes with UV light exposure</li>
+                                </ul>
+                            </li>
+                            <!-- -->
+                            <li class="orange">All material that enters in the hood, as well as the hands, should be cleaned with ethanol 75% to increase the degree of sterilization. For photo-labile substances such as Zeocin, normal light can’t be used to operate inside the hood.
+                            </li>
+                            <li class="orange">Eating, smoking, drinking, wearing contact lenses, cosmetics and storing food for human consumption is totally forbidden.</li>
+                            <li class="orange">Any used material must be cleaned with a lynx eye so that Chema will let you return it with 100% safety.</li>
+                            <li class="orange">When working with carcinogenic substances, such as ethidium bromide, worker awareness, as well as the use of a mask to observe in the transilluminator, must be considered.</li>
+                            <li class="orange">Mouth pipetting or other similar pipetting practices that do not involve the use of pipettes are not allowed.</li>
+
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <p class="orange-intense">Safety in the laboratory</p>
+            </div>
+
+            <div>
+                <p class="orange book">In our project, a whole set of genetically modified organisms have been used and so, handling safety should be considered. We have worked with E. coli, which is a RISK GROUP II agent. This group includes pathogens that can cause diseases to humans or animals. However, under normal circumstances it doesn’t produce serious risks to laboratory workers, community, natural resources or the environment. Laboratory exposures rarely lead to infections that cause serious illness. Different strains were used according to their characteristics and the culture purpose. Escherichia coli DH5 alpha/BL21-DE3 and Pichia pastoris were used in the cloning process. In both cases, pET / pPIC / pGAp plasmids were used in the assembly process which are not harmful to humans or other living organisms. Ethidium bromide is an intercalating agent commonly used as a nucleic acid clarifier in molecular biology laboratories for processes such as agarose gel electrophoresis. This can cause mutations in DNA, so the use of gloves and working with basic guidelines should be considered.
+                </p>
+            </div>
+
+            <div>
+                <p class="orange-intense">Legal risks</p>
+            </div>
+
+            <div>
+                <p class="orange book">Safety issues covers from safety of people at work to many other spheres, including the use of the developed device by users. Then, safety is a completely multidisciplinary area. Follow safety protocols enable academic researchers, decision makers companies and government agencies to standardise techniques and apply them properly. But safety also includes the proper usage of genetic data obtained from the experiments. Our project’s purpose, apart from the development of the sensor, aims to create a big database. There, genes involved in celiac disease and new HLA related genes would be stored and use for research. This service requires the informed consent to users, as their genetic information will be used for scientific purposes.
+                </p>
+            </div>
+        </div>
+    </section>
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+
+</body>
+
+</html>
+
+

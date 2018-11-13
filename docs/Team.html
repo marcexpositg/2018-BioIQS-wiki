@@ -1,0 +1,3077 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+   
+    <header class="masthead teams">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content header-xl">
+                        <h1 class="mb-5">Team | Team members</h1>
+                        <a href="#team" class="btn btn-outline btn-xl js-scroll-trigger" id="meet-us-team">Meet us!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="team" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card roger">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-12.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Roger Compte</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#roger">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Roger Compte</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card julia">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-2.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Júlia Quintanas</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#julia">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Júlia Quintanas</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card victor">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-3.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Victor Maull</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biological Systems Engineering</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#victor">
+
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Victor Maull</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center block-desc-middle">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card marc">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-5.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Marc Expòsit</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#marc">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Marc Expòsit</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center block-desc-middle">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card mireia">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-6.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Mireia Solà</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Chemistry</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#mireia">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Mireia Solà</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center block-desc-middle">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card xavi">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-7.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Xavier Carol</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#xavier">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Xavier Carol</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card jordi">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-8.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Jordi Chi</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biomedicine</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#jordi">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Jordi Chi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card edu">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-11.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Eduard Martínez</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#edu">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Eduard Martínez</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card coral">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-9.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Coral García</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Nanoscience</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#coral">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Coral García</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center block-desc-middle-t">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card jorda">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-10.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Mireia Jordà</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Pharmacy</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#mireia-j">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Mireia Jordà</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center block-desc-middle-t">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card jorda">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-0.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Aitor Vega</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#aitor">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Aitor Vega</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4 center block-desc-middle-t">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="content-card marta">
+                                        <div class="content-img">
+                                            <img class="card-img-top" src="images/pers-4.png" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!--                                    <p><img class=" img-fluid" src="images/pers-2.png"></p>-->
+                                            <h4 class="card-title text-f">Marta Clariana</h4>
+                                            <div class="card-text text-f">
+                                                <p>MSc Bioengineering IQS</p>
+                                                <p>Bs Biotechnology</p>
+                                            </div>
+                                            <!--                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <a class="back-card-link js-scroll-trigger" href="#marta">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="sub-card blinking">Know more about</h4>
+                                            <p class="card-text text-f">Marta Clariana</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+
+    <!--Accordion Xavier -->
+    <!--Accordion wrapper-->
+    <section id="xavier">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                <div class="col-sm-12 col-md-4 person">
+                    <h3 class="orange">Xavier Carol Morera</h3>
+                    <div class="image pers">
+                        <img src="images/xavi.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/xavi.c.morera">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/xaviercarolmorera/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">I’ve read a lot of things about something called proteins.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">I wanted to extend my knowledge related to team-managing to a whole new level.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">My favorite meal: tagliatelle carbonara with mint and prawns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">I am three-dimensional (3D): Diplomatic, Dynamic and Diligent.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">I do crossfit most of the time! I also like reading and watch series.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">The potential it has to solve real life problems by genetically modyifing microorganisms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">My responsibilities refer to the design of the experiments related to the molecular biology field. I also care about the content of the wiki.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Victor Maull think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                            <div class="card-body">
+                                <p class="text-f">Xavi is a highly committed, efficient and methodical person. I have to say that he owns great artistic taste and radiates such inner peace that is hard to beat! Undoubtedly, it has really been a pleasure to have known him during the last year. To sum it all up, I consider him a person to learn from.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Xavier-->
+
+    <!--Accordion Roger-->
+    <!--Accordion wrapper-->
+    <section id="roger">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx2" role="tablist" aria-multiselectable="true">
+                <div class="col-sm-12 col-md-4 person">
+                    <h3 class="orange">Roger Compte</h3>
+                    <div class="image pers">
+                        <img src="images/roger.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/roger.compte">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/roger_compte">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/roger-compte-boixader-454415163">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse01" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">Biotechnology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">Not everyday you get the chance of building your own project with your friends. Putting together basic ideas to create something bigger that could help someone has been a pleasure. In addition, I am the celiac of the group so IGEM is definitely made for people like me.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">The worst part of being celiac is to modify your own habits and even worse, the ones from the people around you. What I miss the most is the typical catalan bread with tomato on top.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">To define myself in three words I would use pragmatic, kind and versatile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse06" aria-expanded="false" aria-controls="collapse06">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free-time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse06" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">I love diving, sealing and fishing. If it were up to me, my natural environment would be the sea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse07" aria-expanded="false" aria-controls="collapse07">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse07" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">The role I had in this project was to get and develop the idea for the project, provide genetic material and work in the genetic extraction and purification for further expression and production.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse08" aria-expanded="false" aria-controls="collapse08">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse08" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">The role I had in this project was to come up with the idea for the project, provide the genetic material and work in the genetic extraction and purification for further expression and production.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse09" aria-expanded="false" aria-controls="collapse09">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Mireia Solà think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse09" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx2">
+                            <div class="card-body">
+                                <p class="text-f">If I had to describe Roger, I would say he is the reason why we enrolled in the iGEM project. This is basically because he became celiac four months before we first heard about this competition. He is a very positive person, friendly and very intelligent. He is always willing to invite us all to his house to do some networking while we make a round of beers and some pizzas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!-- End accordion Roger-->
+
+
+    <!--Accordion Julia-->
+    <!--Accordion wrapper-->
+    <section id="julia">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx3" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Júlia Quintanas</h3>
+                    <div class="image pers">
+                        <img src="images/julia.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/julia.quintanasyani">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/julia.qy/">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://es.linkedin.com/in/j%C3%BAlia-quintanas-yani-6282b1130">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse001" aria-expanded="false" aria-controls="collapse001">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse001" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">Biotechnology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse002" aria-expanded="false" aria-controls="collapse002">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse002" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">It gave me the opportunity to develop a project designed by ourselves and work with my colleagues to pull it forward.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse003" aria-expanded="false" aria-controls="collapse003">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse003" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">cakes, ice cream and all kinds of sweet food.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse004" aria-expanded="false" aria-controls="collapse004">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse004" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">Friendly, passionate and hard-working</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse005" aria-expanded="false" aria-controls="collapse005">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse005" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">I like dancing, travelling and meeting new people. I also Iove the world of furniture restoration and crafting. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse005" aria-expanded="false" aria-controls="collapse005">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse005" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">The idea of combining elements from nature so as to obtain new functions that would not have been possible otherwise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse006" aria-expanded="false" aria-controls="collapse006">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse006" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">Managing the different tasks of the team, disseminate and promote the project as well as participate in the laboratory tasks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse007" aria-expanded="false" aria-controls="collapse007">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Jordi Chi think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse007" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx3">
+                            <div class="card-body">
+                                <p class="text-f">She is a very chill and happy person who always has a funny story to tell about her adventures.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!-- End accordion Julia-->
+
+
+    <!--Accordion Victor-->
+    <!--Accordion wrapper-->
+    <section id="victor">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx4" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Victor Maull</h3>
+                    <div class="image pers">
+                        <img src="images/victor.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/victor-maull-miquel-61404a128/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_1" aria-expanded="false" aria-controls="collapse_1">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_1" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">Biological systems engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_2" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">Marc told me about the contest when we had just begun the Bioengineering master in IQS. Together with him, I started getting motivated about synthetic biology and eventually engaged in the project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_3" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">PIZZA!(Obviously, a mainstream answer for a mainstream question)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_4" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">Stressed, half-cynic, half-dreamer and obsessive about some topics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">I love leaving Barcelona’s stressful streets to go climb a mountain peak. Likewise, as often as I can, I try to plan a trip as wild as I possibly can.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_6" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">Synthetic Biology is a powerful tool to understand the mechanisms underlying biology. It allows us to modify life. Therefore, Richard Feynman’s words acquire great sense to me: “what I cannot create, I do not understand”.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_7" aria-expanded="false" aria-controls="collapse_7">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_7" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">My contribution is related to the development of the DryLab section of our project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapse_8" aria-expanded="false" aria-controls="collapse_8">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Roger Compte think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_8" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx4">
+                            <div class="card-body">
+                                <p class="text-f">Victor is a very charming person to be with. He is always there to help you and offer a shoulder you can cry on. He is very resourceful and likes problem-solving.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!-- End accordion Victor-->
+
+
+    <!--Accordion Marc E-->
+    <!--Accordion wrapper-->
+    <section id="marc">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx5" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Marc Expòsit</h3>
+                    <div class="image pers">
+                        <img src="images/marc.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/marc.expositgoy">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/marc_exposit">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/mexpositg/">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/mexposit">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_01" aria-expanded="false" aria-controls="collapse_01">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_01" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">Biotechnology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_02" aria-expanded="false" aria-controls="collapse_02">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_02" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">It's an incredible opportunity to manage every aspect of a real-life science project, make contributions to the synthbio community and promote public awareness of science.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_03" aria-expanded="false" aria-controls="collapse_03">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_03" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">Sweet chocolate cookies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_04" aria-expanded="false" aria-controls="collapse_04">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_04" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">Creative, hard working and curious.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_05" aria-expanded="false" aria-controls="collapse_05">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free-time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_05" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">Trying to get people involved in projects like iGEM, creating fun but stupid scripts (If you want to encode a text message into DNA, I’ve got one for you!) and playing music with my band.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_06" aria-expanded="false" aria-controls="collapse_06">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_06" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">Everything from synthetic life to DNA information storage, including programming microorganisms in a predictive way.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_07" aria-expanded="false" aria-controls="collapse_07">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team??<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_07" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">As team leader I worked hard to introduce iGEM to our university. I've also been programming the wiki and, as I was completely new to that topic, I decided making the wiki editing tutorial. I also coordinated the progress of the project and prepared some activities outside the lab.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapse_08" aria-expanded="false" aria-controls="collapse_08">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Xavier Carol think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_08" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx5">
+                            <div class="card-body">
+                                <p class="text-f">I would describe Marc as a well-organized, self-disciplined and resourceful scientific. He always finds a way to solve any problem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!-- End accordion Marc E-->
+
+
+    <!--Accordion Mireia S-->
+    <!--Accordion wrapper-->
+    <section id="mireia">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx6" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Mireia Solà</h3>
+                    <div class="image pers">
+                        <img src="images/mireia-s.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/mireia.solasaborit">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/MireiaSol1?lang=en">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/mireiasolasaborit/?hl=es">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/mireia-sola-saborit-40b901139/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_001" aria-expanded="false" aria-controls="collapse_001">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_001" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">I studied chemistry, although I still haven’t watched Breaking Bad.  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_002" aria-expanded="false" aria-controls="collapse5">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_002" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">I found it a great opportunity to learn more about synthetic biology and to work as a team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_003" aria-expanded="false" aria-controls="collapse_003">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_003" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">Without pizza... “Crazy Telepizza Tuesday” has become a ritual.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_004" aria-expanded="false" aria-controls="collapse_004">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_004" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">I would describe myself as a lively, friendly and impulsive person.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_005" aria-expanded="false" aria-controls="collapse_005">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_005" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">I love doing sport, specially running and climbing mountains. In winter, skiing is just the perfect plan for the weekend, although I always try to have time to hang out with my friends.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_006" aria-expanded="false" aria-controls="collapse_006">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_006" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">What fascinates me the most about synthetic biology is how we are able to redesign new artificial pathways using microorganism as our own machines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_007" aria-expanded="false" aria-controls="collapse_007">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_007" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">My role in the project has mainly been managing the social networks, specially Instagram as well as taking photos and videos of our daily work in the laboratoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx6" href="#collapse_008" aria-expanded="false" aria-controls="collapse_008">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Mireia Jordà think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_008" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx6">
+                            <div class="card-body">
+                                <p class="text-f">She is a perfectionist. The laboratory journal is her most precious gem. She is a runner and so she spends most of her day up and down the stairs to get everything you need.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Mireia S-->
+    
+    
+    <!--Accordion Jordi Chi-->
+    <!--Accordion wrapper-->
+    <section id="jordi">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx7" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Jordi Chi</h3>
+                    <div class="image pers">
+                        <img src="images/jordi.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/jordi-chi/?originalSubdomain=es">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">Biomedical Sciences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">Because our team leader was so enthusiastic and excited about it that fooled me to sign up straight away.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">Chinese food</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">Chill, focused but distrustful</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">Chill, have a drink with friends, read a nice book, music (especially jazz) and sports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse15" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">Its potential application to any aspect of life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse16" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">I almost became the PI of the group.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Eduard think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse17" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx7">
+                            <div class="card-body">
+                                <p class="text-f">If you looked up the word efficiency in the dictionary, you’d probably find Jordi's picture. He is the kind of person that is always ahead of everything. He will be the first person to help you when you need it. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Jordi Chi-->
+
+
+    <!--Accordion Edu -->
+    <!--Accordion wrapper-->
+    <section id="edu">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx8" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Eduard Martínez</h3>
+                    <div class="image pers">
+                        <img src="images/edu.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/edumll6">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/edumll/">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse010" aria-expanded="false" aria-controls="collapse010">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse010" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">Biotechnology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse011" aria-expanded="false" aria-controls="collapse011">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse011" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">An IGEM fellow team mate who lives in the best city in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse012" aria-expanded="false" aria-controls="collapse012">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse012" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">Ramen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse014" aria-expanded="false" aria-controls="collapse014">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse014" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">Easy-going, sports lover and Competitive.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse015" aria-expanded="false" aria-controls="collapse015">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse015" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">Judo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse016" aria-expanded="false" aria-controls="collapse016">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse016" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">The way science improves yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse017" aria-expanded="false" aria-controls="collapse017">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse017" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">Putting together the machinery for the expression of HLA with traductional modifications in Pichia Pastoris.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx8" href="#collapse018" aria-expanded="false" aria-controls="collapse018">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Coral think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse018" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx8">
+                            <div class="card-body">
+                                <p class="text-f">Edu is that kind of person that everyone loves. Most of the time he can be pretty annoying, but in the end, he is adorable (and you will never understand why). He is hard-working, and super competitive, but we can say he is a really good friend (out of the lab).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Edu-->
+    
+    
+    <!--Accordion Coral -->
+    <!--Accordion wrapper-->
+    <section id="coral">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx9" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Coral García</h3>
+                    <div class="image pers">
+                        <img src="images/coral.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/coral.garcia.946">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/coral-fernandez-4b1157101/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse20" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">Nanoscience and Nanotechnology (yes… the science of tiny things).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse21" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">Because I wanted to live the experience of team working and science communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse22" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">Pizza! Friday night is pizza night with my flatmates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse23" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">Passionate, hard-working and dynamic.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse24" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">In my free time I enjoy playing volleyball, reading any kind of book and driving anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse25" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">I’m still wondering what synthetic biology is… I think the best point is that it is endless, there are no limits to this area of research.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse26" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">A bit of everything… Lab work, communication activities, sensor design...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx9" href="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Aitor think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse27" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx9">
+                            <div class="card-body">
+                                <p class="text-f">Coral is the one person everybody wants to work with. She is always the first to finish her tasks and help you out if you need a helping hand. You have great chances to find her reading a book in some corner.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Coral-->
+
+    <!--Accordion Mireia J -->
+    <!--Accordion wrapper-->
+    <section id="mireia-j">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx10" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Mireia Jordà</h3>
+                    <div class="image pers">
+                        <img src="images/mireia-j.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/mireia-jorda-redondo/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse020" aria-expanded="false" aria-controls="collapse020">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse020" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Pharmacy because being a licensed drug dealer it’s a real highlight.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse021" aria-expanded="false" aria-controls="collapse021">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse021" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Obviously, the laboratory tasks, which I love even during summer time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse022" aria-expanded="false" aria-controls="collapse022">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse022" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Flour, because I love baking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse023" aria-expanded="false" aria-controls="collapse023">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse023" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Consequent, open-minded and sweet-toothed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse024" aria-expanded="false" aria-controls="collapse024">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse024" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Go out of the cave to collect mushrooms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse025" aria-expanded="false" aria-controls="collapse025">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse025" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">I like it when the experiment is a success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse026" aria-expanded="false" aria-controls="collapse026">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse026" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Being a secretary, you basically get everything done without even noticing it. From Science to Marketing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx10" href="#collapse027" aria-expanded="false" aria-controls="collapse027">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Marta think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse027" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx10">
+                            <div class="card-body">
+                                <p class="text-f">Mireia is a very friendly and cheerful person. There is no day that you don’t see a smile on her face. She is also original and creative, aspects that have been of great help during the project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Mireia-J-->
+
+    <!--Accordion Aitor -->
+    <!--Accordion wrapper-->
+    <section id="aitor">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx11" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Aitor Vega</h3>
+                    <div class="image pers">
+                        <img src="images/aitor.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/aitor.vegasanchez">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/vega.aitor/">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/aitor-vega-sanchez/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_020" aria-expanded="false" aria-controls="collapse_020">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_020" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">I studied biotechnology focusing on bioinformatics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_021" aria-expanded="false" aria-controls="collapse_021">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse_021" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">I decided to participate because it is a great opportunity to improve collaborative work skills as well as to face new and inspirational challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_022" aria-expanded="false" aria-controls="collapse_022">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_022" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">Candy. Contrary to people belief, candy is not normally labelled as ‘gluten free’ due to possible cross-contaminations during manufacturing. A life with no candy is much blander.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_023" aria-expanded="false" aria-controls="collapse_023">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_023" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">I’m passionate, spontaneous and very clumsy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_024" aria-expanded="false" aria-controls="collapse_024">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_024" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f"> I am very passionate about music, always looking for new songs. You will never see me without my blue headphones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_025" aria-expanded="false" aria-controls="collapse_025">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_025" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">What I like the most is that it makes scientists able to solve real world issues by genetically modifying living organisms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_026" aria-expanded="false" aria-controls="collapse_026">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_026" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">I have been in charge of the bioinformatical aspects of the project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx11" href="#collapse_027" aria-expanded="false" aria-controls="collapse_027">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Marc think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse_027" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx11">
+                            <div class="card-body">
+                                <p class="text-f">Aitor is always fighting for his ideals and discussing current topics. When he is not outraged for some political scandal, he is fascinated by autonomous robots, artificial intelligence, new technological gadgets and superheroes. Coupling this interest with his bioinformatic knowledge, one day he might create one of his favourite heroes from the Avengers…who knows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Aitor-->
+    
+    <!--Accordion Mrta -->
+    <!--Accordion wrapper-->
+    <section id="marta">
+        <div class="container">
+            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx12" role="tablist" aria-multiselectable="true">
+                <div class="col-4 person">
+                    <h3 class="orange">Marta Clariana</h3>
+                    <div class="image pers">
+                        <img src="images/marta.jpg">
+                    </div>
+                    <div class="social-ic">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/martaclarianaa">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/martuns3/">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/marta-clariana-colet-733b9b141/">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 memb-desc">
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_020" aria-expanded="false" aria-controls="collapse0_020">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What did you study? <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse0_020" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">Biotechnology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_021" aria-expanded="false" aria-controls="collapse0_021">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What encouraged you to compete in iGEM?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- Card body -->
+                        <div id="collapse0_021" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">It was the perfect opportunity to better understand all the necessary steps to carry out a project from scratch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_022" aria-expanded="false" aria-controls="collapse0_022">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    You could not live without.. <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse0_022" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">Bread. I can’t imagine a breakfast without the typical “pa amb tomaquet”  from Catalonia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_023" aria-expanded="false" aria-controls="collapse0_023">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    Describe yourself in 3 words<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse0_023" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">Perfectionist, constant and friendly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_024" aria-expanded="false" aria-controls="collapse0_024">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you do in your free time?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse0_024" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">I love traveling. I think that it’s the perfect way to discover new cultures and traditions completly different from ours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_025" aria-expanded="false" aria-controls="collapse0_025">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What do you like about synthetic biology?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse0_025" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">The fact that you can produce improved products with important applications by just mixing parts from the DNA of different organisms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_026" aria-expanded="false" aria-controls="collapse0_026">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What’s your role in the BioIQS team?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse0_026" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">Mainly, I’ve been part of the marketing team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                    
+                    <!-- Accordion card -->
+                    <div class="card-member">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx12" href="#collapse0_027" aria-expanded="false" aria-controls="collapse0_027">
+                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                    What does Júlia think about you:<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                </h3>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapse0_027" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx12">
+                            <div class="card-body">
+                                <p class="text-f">Marta is a nice and sociable person. She is always taking care of our celiac fellow (Roger). In addition, she is the chef of our group, her gluten free chocolate cake is delicious. Can’t wait to try it again!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+                </div>
+
+            </div>
+            <!--/.Accordion wrapper-->
+        </div>
+    </section>
+    <!--End accordion Marta-->
+
+
+	
+    <footer></footer>
+
+    <script src="/js/wiki.js"></script> 
+
+</body>
+
+</html>
+
+

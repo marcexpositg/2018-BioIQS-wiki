@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- JQUERY CDN, REMOVE.    script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1 class="mb-5">We are the BioIQS iGEM team!</h1>
+                        <a href="#project" class="btn btn-outline btn-xl js-scroll-trigger">Explore our project!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="project text-center" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Welcome to our page</h2>
+                    <h3 class="orange">A brief resume:</h3>
+
+                    <div class="col-md-auto">
+                        <p class="book orange">Our project is based on the design of a <b>personalized gluten sensor</b> by using the common tools of <b>synthetic biology</b>. There are already several sensors that are able to detect gluten in the food. However, there are milestones that still have not been overcome. We propose a robust model in which the <b>HLA-DQ</b> protein of a patient is expressed and used as a sensor to detect specific reactive gluten epitopes.</p>
+                    </div>
+                    <a class="js-scroll-trigger a-arrow" href="#t-project"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="t-project" id="t-project">
+        <div class="container">
+            <div class="row justify-content-center cnt">
+                <div class="col-md-5 image">
+                    <img src="images/t-cell.png">
+                </div>
+                <div class="col-md-7 text-description lines">
+                    <div class="row justify-content-center">
+                        <div class="col-md-11 col-lg-7">
+                            <p class="text-b"><b>Coeliac disease (CD)</b> is an autoimmune disorder that is closely related with HLA (Human Leukocyte Antigen), a type of cell-surface proteins that are responsible for the regulation of the inmune systems in humans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cnt block-desc">
+               <div class="col-mx-auto relative microscopi">
+                <div class="col-md-7 ">
+                    <p class="apart fletxa">These molecules are responsible for the correct discrimination between what is self and foreign proteins, guaranteeing the correct immune response against foreign agents that can cause infections.
+                    </p>
+                </div>
+                   
+               </div>
+                
+
+            </div>
+
+            <div class="row cnt">
+                <div class="col-md-6 text-description">
+                    <p class="text-b fletxa-d">
+                        Within the HLA protein family there is a subset called HLA-DQ. There are several DQ isoforms that can bind to different gluten-derived epitopes and present them to T-cells. More specifically, 25% of the general population carry the HLA-DQ that can recognize gluten-derived epitopes, but only 1% of the population suffer from coeliac disease.
+                    </p>
+
+                </div>
+                <div class="col-md-6 end">
+                    <p class="apart yellow">As a consequence of T-cell activation, an inmune response is triggered, and it ends up causing damage to the enterocytes present in the small intestine.</p>
+                    <!--                    <img src="images/hla-solo.png">-->
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center cnt block-desc">
+                <div class="col-md-4 image">
+                    <img src="images/hla-solo.png">
+                </div>
+                <div class="col-md-7 text-description">
+                    <div class="row justify-content-center prov">
+                        <div class="col-sm-9">
+                            <p class="text-b">Understanding why the inflammatory response is triggered by a certain type of T cells upon epitope presentation by HLA-DQ molecules is essential to uncover the mechanism of CD. Since the first step for the immune response activation is the recognition and binding of the gluten epitope to the HLA-DQ receptor, we developed a sensor based on this principle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 end cnt block-desc-t">
+                    <p class="apart yellow">The development of a personalized sensor to determine reactive epitopes could help to better understand the disease and would also allow the screening of those foods that could potentially trigger an immune response to the patient.</p>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 button">
+                    <a href="#objectiv" class="text-transform js-scroll-trigger">Look our objectives!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="objectiv text-center" id="objectiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading orange">Objectives</h2>
+                    <h3 class="orange">Here there are:</h3>
+
+                    <div class="col-md-auto orange">
+                        <p class="book">In our iGEM Project we will design a
+                            <b>personalized gluten sensor</b> through a synthetic biology approach. To do so, we decided to build a model based on the HLA expression of the patient which will be coupled to a sensor, allowing the detection of reactive gluten epitopes.</p>
+                    </div>
+                    <a class="js-scroll-trigger a-arrow" href="#t-objectives"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="t-objectives" id="t-objectives">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 right">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="apart big">first</p>
+                            <p class="text-b">To obtain de HLA-DQ from scratch. That means, to extract the &alpha; and &beta; chains <b>from the genomic DNA of a celiac patient.</b></p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 left">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="apart big">second</p>
+                            <p class="text-b">To express the human HLA-DQ in a <b>bacterial or yeast cell host.</b></p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row separation">
+                <div class="col-md-6 right">
+                    <div class="justify-content-center">
+                        <p class="apart big">third</p>
+                        <!--<img class="image" src="img/epitop.png" alt="Card image cap">-->
+                        <p class="text-b">To develop <b>non-dimensional mathematical and stochastic models</b> to understand and predict our sensor dynamics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 left">
+                    <p class="apart big">fourth</p>
+                    <p class="text-b">To provide information to the public so as to <b>clear up misunderstandings related to the celiac disease.</b></p>
+<!--                    <img class="img" src="img/win.png" alt="Card image cap">-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- Copio tots a la carpeta scripts. No fico les versions .min sino les completes pq sigui el programa qho faci min -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!--script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrapbundle.js"></script-->
+
+    <!-- Plugin JavaScript >
+    <script src="scripts/jqueryeasing.js"></script-->
+
+    <!-- Custom scripts for this template >
+    <script src="scripts/new-age.js"></script>
+
+    <script src="scripts/scrollsensitive.js"></script-->
+
+
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+        <!-- Bootstrap core JavaScript >
+        <script src="http://2018.igem.org/Template:BioIQS-Barcelona/js/jquery?action=raw&ctype=text/javascript"></script>
+        <script src="http://2018.igem.org/Template:BioIQS-Barcelona/js/bootstrapbundle?action=raw&ctype=text/javascript"></script>
+    
+        <-- Plugin JavaScript ->
+        <script src="http://2018.igem.org/Template:BioIQS-Barcelona/js/jqueryeasing?action=raw&ctype=text/javascript"></script>
+    
+        <- Custom scripts for this template ->
+        <script src="http://2018.igem.org/Template:BioIQS-Barcelona/js/new-age?action=raw&ctype=text/javascript"></script>
+    
+        <script src="http://2018.igem.org/Template:BioIQS-Barcelona/js/scrollsensitive?action=raw&ctype=text/javascript"></script>
+        -->
+
+
+
+
+    <!--script type="text/javascript">
+        $(document).ready(function(){    
+            //Check if the current URL contains '#'
+            if(document.URL.indexOf("#")==-1){
+                // Set the URL to whatever it was plus "#".
+                url = document.URL+"#";
+                location = "#";
+        
+                //Reload the page
+                location.reload(true);
+            }
+        });
+        </script-->
+
+</body>
+
+</html>

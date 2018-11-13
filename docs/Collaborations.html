@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script>
+        var element = document.querySelector('[rel="stylesheet"]');
+        var stylesheet = element.sheet || element.styleSheet;
+        console.log(stylesheet);
+        stylesheet.disabled = true;
+    </script>
+
+    <link rel="stylesheet" href="css/goodload.css">
+
+    <!-- Habilitar nomes al app per veure les funcions Jquery -->
+    <script src="dist/js/vendor.js"></script>
+
+    <title>BIO IQS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('navigationbar').load('/templates/header.html');
+            $('footer').load('/templates/footer.html');
+        });
+    </script>
+
+    <!--    Fonts googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/allmin.css" rel="stylesheet"> <!-- canvio all.min per allmin-->
+    <link rel="stylesheet" href="css/simplelineicons.css">     <!-- CANVI-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/new-age.css">
+
+    <link rel="stylesheet" href="css/adaptwiki.css">
+
+
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+</head>
+
+<body id="page-top">
+    <div id="igem-navbar-placeholder">
+        <!-- p>Placeholder for iGEM Navbar</p> -->
+    </div> <!-- TREIEM AIXO PQ SENSE ESTIL ES PERD EL FORMAT I NO SERVEIX DE RES -->
+    <navigationbar></navigationbar>
+
+    <button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button>
+
+    <header class="masthead little">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content">
+                        <h1 class="mb-5">Project | Collaborations</h1>
+                        <a href="#collaborate" class="btn btn-outline btn-xl js-scroll-trigger">Have a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="collaborate text-center" id="collaborate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h2 class="section-heading orange">Collaboration is a must!</h2>
+                    <div class="col-md-auto">
+                        <h4 class="book orange block-sept comas"><i>When it comes to research, it is essential to establish collaborations with other teams. In the iGEM competition, there are several ways to share, communicate and set up a network with the community.</i></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto block-sept">
+                    <a class="js-scroll-trigger a-arrow" href="#cl-description"><span class="arrow down"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h3 class="orange-intense">Strategy</h3>
+                    <h4 class="book orange">Our project includes two different strategies:</h4>
+                    <div class="row">
+
+                        <div class="col-md-6 right">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h3 class="orange-medium book">1st</h3>
+                                    <p class="book orange">The obtention of the genes that codify for the &alpha; and &beta; chains of the HLA-DQ protein from a celiac patient.</p>
+                                    <div class="col-md-6 button">
+                                        <a class="text-transform" href="Basic_Part.html">View basic parts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 left">
+                            <div class="row block-sept">
+                                <div class="col-md-12">
+                                    <h3 class="orange-medium book">2nd</h3>
+                                    <p class="book orange">The design of an expression system for the heterologous expression of the HLA-DQ in <i>E. coli</i>.</p>
+                                    <div class="col-md-9 button">
+                                        <a class="text-transform" href="Parts.html">View composite parts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mx-auto">
+                            <div class="row justify-content-center block-desc">
+                                <div class="col-md-8">
+                                    <p class="book orange-medium text-center">The first strategy implies using a DNA sample from a celiac patient. With this in mind, we considered testing the designed HLA gene extraction protocol using DNA samples of different patients.</p>
+                                    <p class="book orange-medium text-center">This would demonstrate that the PCR protocol we have designed to obtain the personalized HLA-DQ of each patient could be applied to all the users of the sensor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row block-desc-b">
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <h3 class="orange-intense">Why?</h3>
+                            <p class="book orange">It would help us to check whether our protocol is robust or not. In other words; if it could be used to extract the HLA-DQ genes from any celiac patient.</p>
+
+                            <p class="book orange">As explained in <a class="link" href="Standardization.html">PCR standardization</a>, the resulting genomic Multiple Sequence Alignment (MSA) between the primers designed and the HLA-DQ genes surprisingly resulted in a perfect alignment for sequences sharing CD-DQ haplotypes. This means, for primer regions, all DQ2-associated sequences match perfectly, and the same happens on DQ8. Moreover, for P2, P3, P1’ and P4’, primer region alignment is perfect, and so, there is no need to edit the standard primers.
+                            </p>
+                        </div>
+                        <div class="col-md-6 left">
+                            <h3 class="orange-intense">To this aim:</h3>
+                            <p class="book orange">The collaboration with the iGEM UPF team was essential. To make things easy, we provided them with a detailed and comprehensive PCR protocol. The 19 paged dossier includes all the information necessary to extract the genomic DNA from a patient's saliva and to set up the PCRs.</p>
+
+                            <p class="book orange">We invited them to ask for any celiac friend up to give them his/her DNA through a sample of saliva. In this context, the iGEM UPF team conducted two sets of PCRs, one using a DNA sample from a friend, and the other, using Roger's DNA as a control.</p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="accordion md-accordion accordion-3 z-depth-1-half row" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                                <div class="col-xs-12 col-md-12 ">
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                <h3 class="mb-0 title-accordion orange-intense">
+                                                    The results were promising<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">They successfully obtained the &beta; chain from both, the DNA sample of their DQ2 fellow and Roger's.</p>
+                                                <div class="col-md-6">
+                                                    <a href="Basic_Part.html">Check it on PCR Personalization</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+
+
+
+                                    <!-- Accordion card -->
+                                    <div class="card-member">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="heading5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                <h3 class="mb-0 mt-3 title-accordion orange-intense">
+                                                    What does that mean?<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
+                                            <div class="card-body wiki-cont">
+                                                <p class="orange book">It proofs that we successfully developed a protocol to extract the HLA-DQ genes from any celiac patient.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="row block-desc-b">
+                        <div class="col-md-12 left">
+                            <div class="row block-sept center">
+                                <div class="col-md-4 button">
+                                    <a class="text-transform" href="http://2018.igem.org/wiki/images/6/6b/T--BioIQS-Barcelona--2018_pcr-protocols-bio-iqs.pdf" target="_blank">View &amp; download PDF <i class="fas fa-file-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 image">
+                            <img class="img-f" src="images/protocols-pres.png">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h3 class="orange-intense">Wiki Editing Tutorial</h3>
+                    <h4 class="book orange">From zero to hero</h4>
+                    <div class="row">
+                        <div class="col-md-12 mx-auto">
+                            <div class="row justify-content-center block-desc">
+                                <div class="col-md-8">
+                                    <p class="book orange-medium text-center"><i>The iGEM wiki is where teams write all the information about their projects to make it available for teams participating the next year, judges or people interested in the project. It is also the place where team members itself go to remember their iGEM experience and see how the project looks like after all the work done during the summer. However, most iGEM teams are mainly composed of students of biology-related fields, which usually do not have the necessary skills to set up a wiki.</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <h3 class="orange-intense">What we did?</h3>
+                            <p class="book orange">We created a series of video tutorials on iGEM wiki editing with the intention to facilitate learning how to edit a decent iGEM wiki page to team members with no prior experience in wiki editing. This way, teams will be able to document their project in a better way in their wikis and let them focus on iGEM projects without struggling to learn how to edit the wiki.</p>
+
+                            <p class="book orange">There are lots of tutorials on web development. However, the iGEM wiki is quite a peculiar interface and amateur students might have a difficult time learning how to edit it despite the information provided by iGEM. For this reason, this tutorial is totally focused on learning how to set up a functional but stylish wiki design that can easily be adapted and uploaded to the iGEM server. The tutorial consists of a total of 4.5 hours of video and a GitHub repository containing all the examples used in the tutorial. We really encourage you to check for more information about the purpose, the design and the contents of this tutorial by accessing its dedicated <a class="link" href="Wiki_editing.html" target="_blank">wiki page</a>.
+                            </p>
+                        </div>
+                        <div class="col-md-6 left">
+                            <h3 class="orange-intense">What we expect from this Tutorial:</h3>
+                            <p class="book orange">We believe that this tutorial is one of our most ambitious collaborations, as all the teams participating in the subsequent years’ iGEM competitions will benefit from it. It also helps to solve one of the major challenges that other teams will face. By following this tutorial, future teams will be able to document their projects better in their wiki. Therefore, we believe that this tutorial is more than just providing help in wiki editing, as this will also imply an improvement on the way that iGEM projects are documented and this will have a great impact in the iGEM community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="st-description block-desc" id="cl-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h3 class="orange-intense">Wiki collaborations</h3>
+                    <h4 class="book orange">We are not alone</h4>
+                    <div class="row">
+                        <div class="col-md-12 mx-auto">
+                            <div class="row justify-content-left block-desc">
+                                <div class="col-md-8">
+                                    <p class="book orange-medium text-left"><i>While creating our wiki editing tutorial (enllaçar amb link), we met other teams which were also contributing to wiki development in a different way:</i></p>
+                                    <ul>
+                                        <li class="orange">The iGEM Marburg 2018 team created a guideline on how to design an accessible wiki to people with disabilities. You can check it <a class="link" href="http://2018.igem.org/Team:Marburg/Human_Practices" target="_blank">here</a>. We implemented their suggestions in this wiki and realized that it was so easy and so convenient that all teams should do it. For this reason, we encourage the rest of the teams to follow this guideline. We also recommended so in our wiki editing tutorial. So they have helped us designing an accessible wiki and we have helped them by divulgating the guideline in our wiki editing tutorial. Thank you very much iGEM Marburg 2018!</li>
+                                        <li class="orange">The iGEM Virginia 2018 team created a <a class="link" href="http://2018.igem.org/Team:Virginia/Wiki" target="_blank">Wiki Build Tool</a> which makes much easier to synchronize the content between the iGEM server and the files that are being edited locally. We have used their Wiki Build Tool to transfer and upload our wiki from the local version to the online version in the iGEM server. It is quite easy to use even for inexperienced team members in web development and incredibly simplifies the process of uploading the wiki manually. We also featured this tool in our wiki editing tutorials to get other teams to know it. Thank you very much iGEM Virginia 2018!</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 center">
+                                    <p class="book orange-medium text-left">We are amazed to realize how various teams work in different aspects of the wiki to facilitate and improve this derivable of the iGEM projects, which might be one of the most important. We believe that this collective effort is a sort of collaboration, in which various teams work independently but in the same direction to solve the same problem.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <h3 class="orange-intense">Spanish MeetUp</h3>
+                    </div>
+                    <div class="row block-desc-b">
+                        <div class="col-md-6 right">
+                            <p class="book orange">The Spanish Meet Up organized by the UPF-CRG Barcelona iGEM team took place between over the last week of August. During this days, teams engaged in very diverse activities like project presentations, beach volley, listening to synthetic biology professionals’ lectures and a city tour. Five teams were present in the Spanish Meet Up: UPF-CRG Barcelona (the organizers, working on engineering an <i>E. coli</i> strain to increase palmitic acid uptake), <a class="link" href="http://2018.igem.org/Team:Madrid-OLM" target="_blank">OLM-Madrid</a>, <a class="link" href="http://2018.igem.org/Team:Navarra_BG" target="_blank">Navarra</a>, <a class="link" href="http://2018.igem.org/Team:Grenoble-Alpes" target="_blank">Grenoble</a> and us.</p>
+
+                            <p class="book orange">Maybe the most fruitful part of the meeting was the project presentations of each team. Our team did a very detailed and sincere presentation of our iGEM project. This way, other teams get to know what things we had already done successfully and what were our challenges. We believe that presenting all the information about the project and identifying the strengths and the weaknesses of it help establishing collabortions between teams and receiving feedback and help. In fact, during the time for questions, we received multiple ideas to incorporate to our project. One of the greatest ideas was given by Oscar from UPF-CRG Barcelona, which said that designing a mobile app to read the result of the sensor and connecting to the cloud to send the information about this analysis (restaurant, dish, date and result) could create a very useful network/database for the users of the sensor.</p>
+
+                            <p class="book orange">In addition, we presented to the other teams the opportunity to collaborate with us by replicating our PCR standardization process with the saliva of another celiac person. The iGEM UPF-CRG Barcelona team accepted to collaborate with us, as both teams are from the same city, which facilitates the communication and material exchange between us.</p>
+                        </div>
+                        <div class="col-md-6 left">
+                            <p class="book orange">We also discussed how we could integrate our sensor with the sensor designed by OLM-Madrid. The experimental part of our project has been focused on the sensing element of the gluten sensor (finding a way to express the HLA-DQ protein of each user), whereas the focus of the OLM-Madrid project has been the design of a hardware platform for another sensor. Therefore, both projects complement. For this reason, both teams discussed how to combine the HLA-DQ protein obtained following our method with the hardware platform designed by their team. Basically, the protein should incorporate a sulfur group in the desired region in order to attach it to the conductive gold layer of the sensor.</p>
+
+                            <p class="book orange">This should be done in a way that the region which interacts with the gliadin peptide is exposed to gliadin molecules and not blocked by the surface of the sensor. The sensor would detect the binding of the peptide due to the change of potential experimented by the surface of the conductive gold layer. However, there are certain points which should still be checked experimentally, like the need for rinsing steps between two different usages of the sensor. Overall, we discussed an alternative to the gold nanoparticle visual detection method we designed and purposed <a class="link" href="Model.html" target="_blank">here</a>.</p>
+
+                            <p class="book orange">One of the most stimulating points of the Spanish MeetUp was hearing the presentation of other teams’ projects and getting new synthetic biology ideas from there. All the teams which participated in the Spanish MeetUp did a project of a very different topic. Hence, it was very interesting to see other applications of synthetic biology and how the iGEM competition is a perfect fit for very different kind of projects. The experts’ presentations were absolutely amazing. With them, we discussed important topics in synthetic biology like the present, the future and risks of genetic engineering in humans, the predictive and mathematic behavior of microorganisms cooperating between them and the reed for standardization in synthetic biology. Thank you very much UPF-CRG Barcelona team for organizing the Spanish MeetUp! Thank you as well to the rest of the teams which assisted there for having a good time all together!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <section class=" block-desc" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row block-sept">
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-f" src="images/spanish_meetup.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-f" src="images/spanish_meetup_2.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-f" src="images/spanish_meetup_3.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+	
+    <footer></footer>
+
+
+    <script src="/js/wiki.js"></script> <!-- calling all minified scripts -->
+
+
+</body>
+
+</html>
+
+
