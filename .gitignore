@@ -11,7 +11,7 @@ __pycache__/
 env/
 build/
 develop-eggs/
-dist/
+#dist/          #Modificacio perque penji carpeta dist necessaria per ficar repo online a traves de docs.
 downloads/
 eggs/
 .eggs/
